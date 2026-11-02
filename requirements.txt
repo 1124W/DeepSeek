@@ -1,0 +1,6 @@
+ccxt
+pandas
+openai
+flask
+gunicorn
+httpx

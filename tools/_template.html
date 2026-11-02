@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>量化程序回测审计台 · DeepSeek Strategy</title>
+<style>
+  :root{
+    --bg:#f4f6f9; --panel:#ffffff; --ink:#19212e; --ink2:#3d4859; --muted:#77828f;
+    --line:#e5e9f0; --line2:#eef1f6;
+    --brand:#3f63f5; --brand-soft:#eef2ff;
+    --up:#d94a4a; --up-soft:#fdeeee;
+    --down:#0f9d70; --down-soft:#e9f8f1;
+    --amber:#c98a1f; --amber-soft:#fff7e8;
+    --ok:#0f9d70; --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px -12px rgba(16,24,40,.12);
+    --mono:ui-monospace,SFMono-Regular,"Roboto Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:14px/1.55 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1300px;margin:0 auto;padding:26px 22px 80px}
+  /* ---------- header ---------- */
+  header{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:22px}
+  h1{font-size:22px;line-height:1.3;margin:0 0 6px;letter-spacing:-.3px;font-weight:650}
+  h1 small{font-weight:500;color:var(--muted);font-size:13px;margin-left:8px;letter-spacing:0}
+  .meta{color:var(--muted);font-size:12.5px;display:flex;gap:14px;flex-wrap:wrap}
+  .meta b{color:var(--ink2);font-weight:600}
+  .btn{
+    border:1px solid var(--line);background:#fff;color:var(--ink2);
+    padding:8px 14px;border-radius:9px;font-size:13px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px;transition:.15s;font-family:inherit;
+  }
+  .btn:hover{border-color:#cdd5e3;box-shadow:var(--shadow)}
+  .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .btn.primary:hover{background:#3454e0}
+  /* ---------- verdict ---------- */
+  .verdict{
+    background:var(--amber-soft);border:1px solid #f2dfb6;border-radius:14px;
+    padding:16px 18px;margin-bottom:22px;display:flex;gap:14px;align-items:flex-start;
+  }
+  .verdict .icon{
+    flex:0 0 26px;height:26px;border-radius:8px;background:#f7e3bb;color:#8a5b06;
+    display:grid;place-items:center;font-weight:700;font-size:15px;
+  }
+  .verdict h2{margin:0 0 6px;font-size:14.5px;font-weight:650;color:#7a4f04}
+  .verdict p{margin:0;font-size:13px;color:#6b5220;line-height:1.7}
+  .verdict code{background:#fff6e2;border:1px solid #f0dcb4;border-radius:5px;padding:1px 5px;font-family:var(--mono);font-size:12px;color:#7a4f04}
+  /* ---------- kpi ---------- */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:14px;margin-bottom:24px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 17px;box-shadow:var(--shadow)}
+  .kpi .lab{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;margin-bottom:9px}
+  .kpi .val{font-size:29px;font-weight:650;letter-spacing:-1px;line-height:1.1;font-variant-numeric:tabular-nums}
+  .kpi .sub{font-size:12px;color:var(--muted);margin-top:7px}
+  .kpi.strict .val{color:var(--ink)}
+  .kpi.mainrec .val{color:var(--amber)}
+  .delta{display:inline-block;font-size:11.5px;padding:1px 6px;border-radius:5px;font-weight:600;vertical-align:middle;margin-left:4px}
+  .delta.neg{background:var(--down-soft);color:#0b7a56}
+  .delta.grey{background:#f0f2f6;color:var(--muted)}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);display:inline-block}
+  .dot.amber{background:var(--amber)}
+  .dot.slate{background:#9aa5b4}
+  /* ---------- section ---------- */
+  section{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:18px;box-shadow:var(--shadow)}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+  .sec-head h3{margin:0;font-size:15px;font-weight:650;letter-spacing:-.1px}
+  .sec-head .hint{font-size:12px;color:var(--muted)}
+  /* ---------- comparison table ---------- */
+  table.cmp{width:100%;border-collapse:collapse;font-size:13px}
+  table.cmp th,table.cmp td{padding:11px 12px;text-align:left;border-bottom:1px solid var(--line2)}
+  table.cmp th{font-size:11.5px;color:var(--muted);font-weight:600;letter-spacing:.02em;background:#fafbfd}
+  table.cmp th:first-child{border-top-left-radius:8px}
+  table.cmp th:last-child{border-top-right-radius:8px}
+  table.cmp td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  table.cmp tr:last-child td{border-bottom:none}
+  .tag{font-size:11px;padding:2px 7px;border-radius:5px;font-weight:600;white-space:nowrap}
+  .tag.a{background:#eef1f6;color:#43506b}
+  .tag.b{background:var(--brand-soft);color:#2f4bcc}
+  .tag.c{background:var(--amber-soft);color:#8a5b06}
+  .tag.ok{background:var(--down-soft);color:#0b7a56}
+  .tag.bad{background:var(--up-soft);color:#a52e2e}
+  .big{font-size:17px;font-weight:650;letter-spacing:-.3px}
+  /* ---------- charts ---------- */
+  .charts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:980px){.charts{grid-template-columns:1fr}}
+  .chart-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);position:relative}
+  .chart-card h4{margin:0 0 3px;font-size:13.5px;font-weight:650}
+  .chart-card .cap{font-size:11.8px;color:var(--muted);margin-bottom:12px}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11.8px;color:var(--ink2);margin-bottom:6px}
+  .legend i{display:inline-block;width:16px;height:3px;border-radius:2px;vertical-align:middle;margin-right:5px}
+  .cv{width:100%;display:block}
+  .tip{
+    position:absolute;pointer-events:none;background:rgba(25,33,46,.94);color:#fff;
+    font-size:11.5px;line-height:1.6;padding:7px 10px;border-radius:8px;white-space:nowrap;
+    transform:translate(-50%,-115%);opacity:0;transition:opacity .1s;z-index:5;font-variant-numeric:tabular-nums;
+  }
+  .tip.on{opacity:1}
+  .tip b{color:#fff;font-weight:650}
+  .tip .k{color:#a9b4c6}
+  /* ---------- bars ---------- */
+  .barlist{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+  .barlist .row{display:grid;grid-template-columns:66px 1fr 92px;align-items:center;gap:12px;font-size:12.5px}
+  .barlist.dim .row{grid-template-columns:80px 1fr 210px;gap:10px}
+  .barlist .track{height:9px;background:#f0f2f6;border-radius:5px;overflow:hidden;position:relative}
+  .barlist.dim .track{height:14px;border-radius:4px}
+  .barlist .fill{height:100%;border-radius:5px;background:var(--brand)}
+  .barlist .fill.mid{background:#9aa5b4}
+  .barlist.dim .fill{background:var(--up);opacity:.82;border-radius:4px}
+  .barlist.dim .fill.low{background:var(--down);opacity:.78}
+  .barlist .num{text-align:right;font-family:var(--mono);color:var(--ink2);font-size:12px}
+  .halfmark{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:#c8d0dd;z-index:2}
+  .whisker{position:absolute;top:2px;bottom:2px;border-left:1px solid rgba(25,33,46,.45);border-right:1px solid rgba(25,33,46,.45);z-index:1}
+  .whisker::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(25,33,46,.45)}
+  .star{font-size:10.5px;color:#b07d12;font-weight:700;letter-spacing:-.5px}
+  .grid2{display:grid;grid-template-columns:1fr 330px;gap:24px}
+  @media(max-width:900px){.grid2{grid-template-columns:1fr}}
+  .rank{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:14px}
+  .rank h5{margin:0;padding:9px 12px;font-size:12.5px;background:#fafbfd;border-bottom:1px solid var(--line2);font-weight:650;display:flex;justify-content:space-between}
+  .rank h5 span{font-weight:500;color:var(--muted);font-size:11.5px}
+  .rank ol{margin:0;padding:6px 12px 10px 30px;font-size:12.3px;line-height:1.9}
+  .rank li{margin:2px 0}
+  .note{font-size:11.8px;color:var(--muted);line-height:1.75;background:#fafbfd;border:1px solid var(--line2);border-radius:10px;padding:10px 12px;margin-top:12px}
+  /* ---------- detail table ---------- */
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+  .toolbar select,.toolbar input[type=search],.toolbar input[type=number]{
+    border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 10px;font-size:12.5px;
+    color:var(--ink2);font-family:inherit;outline:none;
+  }
+  .toolbar select:focus,.toolbar input:focus{border-color:#b9c6f0;box-shadow:0 0 0 3px rgba(63,99,245,.09)}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg button{border:none;background:#fff;padding:7px 12px;font-size:12.5px;cursor:pointer;color:var(--ink2);font-family:inherit}
+  .seg button+button{border-left:1px solid var(--line)}
+  .seg button.on{background:var(--brand-soft);color:#2f4bcc;font-weight:600}
+  .tablewrap{overflow:auto;border:1px solid var(--line);border-radius:12px}
+  table.data{width:100%;border-collapse:separate;border-spacing:0;font-size:12.3px;min-width:1060px}
+  table.data thead th{
+    position:sticky;top:0;background:#fafbfd;z-index:2;text-align:left;font-weight:600;color:var(--muted);
+    font-size:11.3px;padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap;cursor:pointer;user-select:none;
+  }
+  table.data thead th.nosort{cursor:default}
+  table.data thead th:hover{color:var(--ink)}
+  table.data tbody td{padding:8px 10px;border-bottom:1px solid var(--line2);white-space:nowrap;color:var(--ink2)}
+  table.data tbody tr:hover td{background:#fafbff}
+  table.data tbody tr:last-child td{border-bottom:none}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .pos{color:var(--up)}
+  .neg{color:var(--down)}
+  .pend{color:#b0b8c4}
+  .chipx{display:inline-block;font-size:11px;padding:1px 6px;border-radius:5px;font-weight:600}
+  .chipx.up{background:var(--up-soft);color:#b03a3a}
+  .chipx.dn{background:var(--down-soft);color:#0b7a56}
+  .strat{max-width:290px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:11.8px}
+  .pager{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+  .pager .pbtn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:5px 11px;cursor:pointer;font-size:12.5px;font-family:inherit;color:var(--ink2)}
+  .pager .pbtn:disabled{opacity:.45;cursor:default}
+  /* ---------- method ---------- */
+  .method{font-size:13px;color:var(--ink2);line-height:1.85}
+  .method h4{margin:16px 0 6px;font-size:13px;color:var(--ink);font-weight:650}
+  .method h4:first-child{margin-top:0}
+  .method code{background:#f5f7fb;border:1px solid var(--line2);border-radius:5px;padding:1px 5px;font-family:var(--mono);font-size:12px}
+  .method ul{margin:6px 0;padding-left:20px}
+  .method li{margin:4px 0}
+  .foot{color:var(--muted);font-size:11.8px;text-align:center;margin-top:26px;line-height:1.8}
+  .hidden{display:none!important}
+  .scroll-hint{font-size:11.5px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <h1>量化程序回测审计台<small>DeepSeek Strategy · 严格方向复盘</small></h1>
+      <div class="meta" id="metaBar"></div>
+    </div>
+    <div style="display:flex;gap:9px;align-items:center">
+      <label class="btn" for="csvFile">重新导入 CSV</label>
+      <input type="file" id="csvFile" accept=".csv" class="hidden">
+      <button class="btn primary" id="btnExport">导出审计结论</button>
+    </div>
+  </header>
+
+  <div class="verdict" id="verdict"></div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <section>
+    <div class="sec-head">
+      <h3>三口径对比</h3>
+      <span class="hint">同一批预测，三种判定方式的结果差异</span>
+    </div>
+    <table class="cmp" id="cmpTable"></table>
+  </section>
+
+  <div class="charts">
+    <div class="chart-card">
+      <h4>每日胜率走势（10 分钟预测）</h4>
+      <div class="cap">严格口径 vs main.py 记录口径，按自然日聚合</div>
+      <div class="legend">
+        <span><i style="background:#3f63f5"></i>严格口径</span>
+        <span><i style="background:#c98a1f"></i>main.py 记录</span>
+      </div>
+      <canvas class="cv" id="cvDaily" height="230"></canvas>
+      <div class="tip" id="tipDaily"></div>
+    </div>
+
+    <div class="chart-card">
+      <h4>累计收益曲线（按预测方向做单）</h4>
+      <div class="cap">看涨做多 / 看跌做空，1 倍名义本金，逐笔累加，含手续费</div>
+      <div class="legend">
+        <span><i style="background:#3f63f5"></i>10 分钟持有</span>
+        <span><i style="background:#8b6bf0"></i>30 分钟持有</span>
+      </div>
+      <canvas class="cv" id="cvEquity" height="230"></canvas>
+      <div class="tip" id="tipEquity"></div>
+    </div>
+
+    <div class="chart-card">
+      <h4>信心分档 vs 真实胜率</h4>
+      <div class="cap">AI 自报信心越高，是否真的越准？（灰线为 50% 基准）</div>
+      <div class="barlist" id="confBars"></div>
+    </div>
+
+    <div class="chart-card">
+      <h4>预测方向分布与表现</h4>
+      <div class="cap">模型是否长期偏向某一方向？各方向真实胜率如何？</div>
+      <div id="dirBlock"></div>
+    </div>
+  </div>
+
+  <section id="secSlice">
+    <div class="sec-head">
+      <h3>胜率高地 / 低洼 · 维度切片</h3>
+      <span class="hint">严格口径（10 分钟）· 灰线为 50% 基准 · 横杠为 95% 置信区间</span>
+    </div>
+    <div class="toolbar">
+      <div class="seg" id="segDim">
+        <button data-v="hour" class="on">时段</button>
+        <button data-v="dow">星期</button>
+        <button data-v="month">月度</button>
+        <button data-v="sym">币种</button>
+        <button data-v="conf">信心</button>
+        <button data-v="rsi">RSI 区间</button>
+        <button data-v="bias">EMA20 偏离</button>
+        <button data-v="vol">已实现波动</button>
+        <button data-v="macd">MACD 方向</button>
+      </div>
+      <span style="font-size:11.8px;color:var(--muted)" id="dimStat"></span>
+    </div>
+    <div class="grid2">
+      <div><div class="barlist dim" id="sliceBars"></div></div>
+      <div>
+        <div class="rank" id="rankHigh"></div>
+        <div class="rank" id="rankLow"></div>
+        <div class="note" id="sliceNote"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="secHeat">
+    <div class="sec-head">
+      <h3>时段 × 星期 热力图</h3>
+      <span class="hint">每格为该时段的严格胜率，颜色越红越高、越绿越低；鼠标悬停查看样本量</span>
+    </div>
+    <canvas class="cv" id="cvHeat" height="270"></canvas>
+    <div class="tip" id="tipHeat"></div>
+    <div class="note" id="heatNote"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h3>「假胜」样本</h3>
+      <span class="hint" id="fakeHint"></span>
+    </div>
+    <div class="tablewrap">
+      <table class="data" id="fakeTable" style="min-width:900px"></table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h3>全量明细</h3>
+      <span class="hint" id="rowHint"></span>
+    </div>
+    <div class="toolbar">
+      <select id="fSym">
+        <option value="">全部币种</option>
+      </select>
+      <div class="seg" id="segRes">
+        <button data-v="" class="on">全部</button>
+        <button data-v="win">严格判对</button>
+        <button data-v="loss">严格判错</button>
+        <button data-v="fake">仅假胜</button>
+      </div>
+      <select id="fPred">
+        <option value="">全部预测方向</option>
+        <option value="看涨">看涨</option>
+        <option value="看跌">看跌</option>
+      </select>
+      <input type="search" id="fKey" placeholder="搜索分析依据关键词…" style="min-width:200px">
+      <input type="number" id="fFee" value="0.04" step="0.01" min="0" style="width:110px" title="单边手续费 %">
+      <span style="font-size:11.8px;color:var(--muted)">单边手续费 %</span>
+      <span style="flex:1"></span>
+      <span style="font-size:11.8px;color:var(--muted)" id="filterStat"></span>
+    </div>
+    <div class="tablewrap">
+      <table class="data" id="dataTable"></table>
+    </div>
+    <div class="pager">
+      <span id="pageInfo"></span>
+      <span style="display:flex;gap:8px;align-items:center">
+        <select id="pageSize" style="border:1px solid var(--line);border-radius:7px;padding:5px 8px;font-size:12.5px;background:#fff;color:var(--ink2)">
+          <option>50</option><option selected>100</option><option>200</option>
+        </select>
+        <button class="pbtn" id="prev">上一页</button>
+        <button class="pbtn" id="next">下一页</button>
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h3>判定方法说明</h3></div>
+    <div class="method">
+      <h4>1. 严格口径（本页主口径）</h4>
+      <ul>
+        <li>对每条预测，取该币种在 <code>预测时间 + 10 分钟</code>（或 +30 分钟）那一行 CSV 的价格作为结算价，容差 ±2.5 分钟内就近匹配；</li>
+        <li>用 <code>(结算价 − 预测价) / 预测价</code> 判断真实方向：&gt;0 为涨、&lt;0 为跌；</li>
+        <li><b>预测方向与真实方向一致才算赢</b>，没有任何“波动太小算平/算赢”的豁免，这才是可交易的真实水平。</li>
+      </ul>
+      <h4>2. 原版规则 + 正确价格（口径 B）</h4>
+      <ul>
+        <li>沿用 main.py 的判胜规则：方向一致 <b>或</b> 波动绝对值 &lt; 0.02%（10 分钟）/ &lt; 0.04%（30 分钟）都算赢；</li>
+        <li>但结算价换成上面正确的时点价格。用于隔离「判平豁免」这一项的影响。</li>
+      </ul>
+      <h4>3. main.py 实际记录（口径 C）</h4>
+      <ul>
+        <li>直接读取 CSV 中 <code>backtest_10m</code> / <code>backtest_30m</code> 列已有的 ✅ / ❌，即线上程序自己算出来的结果；</li>
+        <li>它的结算价是「结算那一刻的实时价」，而非预测时刻 +10m/+30m 的时点价，且带判平豁免。</li>
+      </ul>
+      <h4>为什么三种口径会差这么多</h4>
+      <p>如果 A 与 B 差距很大、B 与 C 接近，说明虚高的胜率主要来自「波动小判赢」的规则；如果三项都接近，说明价格结算方式无实质影响。本页顶部的结论横幅会自动给出该对比。</p>
+      <h4>收益曲线的假设</h4>
+      <ul>
+        <li>按预测方向开仓：看涨做多、看跌做空，持有到对应时点平仓；</li>
+        <li>1 倍名义本金，逐笔累加（不复利），每笔扣除 <code>2 × 手续费</code>；手续费可在筛选栏调整，默认 0.04%/边（币安合约吃单档）；</li>
+        <li>不含滑点、资金费率、强平，属于理想上界。</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="foot">
+    数据源：strategy_data.csv（服务器 /opt/deepseek）· 页面生成于 <span id="genAt"></span><br>
+    单文件离线运行，不依赖任何外部资源；可点右上角「重新导入 CSV」载入最新数据重算。
+  </div>
+</div>
+
+<script>
+"use strict";
+const RAW = /*__ROWS__*/[];
+const META = /*__META__*/{};
+
+const SYMS = META.syms;
+const PENDING = -1;
+
+/* ---------------- 基础工具 ---------------- */
+const fmtTime = s => new Date(s * 1000).toISOString().slice(0, 16).replace("T", " ");
+const fmtDay  = s => new Date(s * 1000).toISOString().slice(0, 10);
+const pct = (x, d = 1) => (x === null || x === undefined || isNaN(x)) ? "—" : (x).toFixed(d) + "%";
+const bp = v => (v >= 0 ? "+" : "") + v.toFixed(1) + "bp";
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+
+/* ---------------- 载入数据 ---------------- */
+let rows = [];
+function loadRaw(raw) {
+  rows = raw.map(a => {
+    const t = a[0];
+    return {
+      t, sym: SYMS[a[1]], price: a[2],
+      p10: a[3] === 1 ? "看涨" : "看跌", p30: a[4] === 1 ? "看涨" : "看跌",
+      c10: a[5], c30: a[6], bt10: a[7], bt30: a[8], strategy: a[9] || "", rsi: a[10], macd: a[11],
+      r10: null, r30: null, a10: false, a30: false, b10: false, b30: false, c10w: null, c30w: null
+    };
+  });
+  rows.sort((x, y) => x.t - y.t);
+  buildIndex();
+  evaluate();
+  deriveFeatures();
+}
+
+/* 价格索引：币种 -> 时间升序数组 */
+let IDX = {};
+function buildIndex() {
+  IDX = {};
+  for (const r of rows) (IDX[r.sym] = IDX[r.sym] || []).push(r);
+  for (const s in IDX) IDX[s].sort((a, b) => a.t - b.t);
+}
+function priceAt(sym, target, tolSec = 150) {
+  const arr = IDX[sym]; if (!arr || !arr.length) return null;
+  let lo = 0, hi = arr.length - 1;
+  while (lo <= hi) { const m = (lo + hi) >> 1; if (arr[m].t < target) lo = m + 1; else hi = m - 1; }
+  let best = null, bestGap = Infinity;
+  for (let j = lo - 1; j <= lo + 1; j++) {
+    if (j < 0 || j >= arr.length) continue;
+    const gap = Math.abs(arr[j].t - target);
+    if (gap <= tolSec && gap < bestGap) { bestGap = gap; best = arr[j].price; }
+  }
+  return best;
+}
+
+function evaluate() {
+  for (const r of rows) {
+    const p10 = priceAt(r.sym, r.t + 600), p30 = priceAt(r.sym, r.t + 1800);
+    if (p10 != null) {
+      const ret = (p10 - r.price) / r.price * 100;
+      r.r10 = ret;
+      const real = ret > 0 ? "看涨" : (ret < 0 ? "看跌" : "平");
+      r.a10 = r.p10 === real;
+      r.b10 = r.a10 || Math.abs(ret) < 0.02;
+    }
+    if (p30 != null) {
+      const ret = (p30 - r.price) / r.price * 100;
+      r.r30 = ret;
+      const real = ret > 0 ? "看涨" : (ret < 0 ? "看跌" : "平");
+      r.a30 = r.p30 === real;
+      r.b30 = r.a30 || Math.abs(ret) < 0.04;
+    }
+    r.c10w = r.bt10 === 1 ? true : (r.bt10 === 0 ? false : null);
+    r.c30w = r.bt30 === 1 ? true : (r.bt30 === 0 ? false : null);
+  }
+}
+
+/* ---------------- 统计 ---------------- */
+function agg(list) {
+  const o = {
+    nA10: 0, wA10: 0, nA30: 0, wA30: 0,
+    nB10: 0, wB10: 0, nB30: 0, wB30: 0,
+    nC10: 0, wC10: 0, nC30: 0, wC30: 0,
+    fake: 0, ret10: 0, ret30: 0, maxWin: 0, maxLoss: 0,
+    bySym: {}, byDir: {}, byConf: {}, byDay: {}, eq10: [], eq30: []
+  };
+  let curW = 0, curL = 0;
+  const sorted = list.slice().sort((a, b) => a.t - b.t);
+  for (const r of sorted) {
+    if (r.r10 != null) {
+      o.nA10++; if (r.a10) o.wA10++;
+      o.nB10++; if (r.b10) o.wB10++;
+      o.ret10 += (r.p10 === "看涨" ? r.r10 : -r.r10);
+      if (r.a10) { curW++; curL = 0; } else { curL++; curW = 0; }
+      o.maxWin = Math.max(o.maxWin, curW); o.maxLoss = Math.max(o.maxLoss, curL);
+      const d = fmtDay(r.t);
+      (o.byDay[d] = o.byDay[d] || { a: [0, 0], c: [0, 0] });
+      o.byDay[d].a[0] += r.a10 ? 1 : 0; o.byDay[d].a[1]++;
+      const s = (o.bySym[r.sym] = o.bySym[r.sym] || { a: [0, 0], c: [0, 0] });
+      s.a[0] += r.a10 ? 1 : 0; s.a[1]++;
+      const dd = (o.byDir[r.p10] = o.byDir[r.p10] || { a: [0, 0] });
+      dd.a[0] += r.a10 ? 1 : 0; dd.a[1]++;
+      const ck = r.c10 < 55 ? "50-55" : r.c10 < 60 ? "55-60" : r.c10 < 65 ? "60-65" : r.c10 < 70 ? "65-70" : r.c10 < 75 ? "70-75" : "75+";
+      (o.byConf[ck] = o.byConf[ck] || [0, 0]);
+      o.byConf[ck][0] += r.a10 ? 1 : 0; o.byConf[ck][1]++;
+    }
+    if (r.r30 != null) {
+      o.nA30++; if (r.a30) o.wA30++;
+      o.nB30++; if (r.b30) o.wB30++;
+      o.ret30 += (r.p30 === "看涨" ? r.r30 : -r.r30);
+    }
+    if (r.c10w !== null) {
+      o.nC10++; if (r.c10w) o.wC10++;
+      const d = fmtDay(r.t);
+      (o.byDay[d] = o.byDay[d] || { a: [0, 0], c: [0, 0] });
+      o.byDay[d].c[0] += r.c10w ? 1 : 0; o.byDay[d].c[1]++;
+      const s = (o.bySym[r.sym] = o.bySym[r.sym] || { a: [0, 0], c: [0, 0] });
+      s.c[0] += r.c10w ? 1 : 0; s.c[1]++;
+      if (r.c10w && !r.a10 && r.r10 != null) o.fake++;
+    }
+    if (r.c30w !== null) { o.nC30++; if (r.c30w) o.wC30++; }
+  }
+  o.wrA10 = o.nA10 ? 100 * o.wA10 / o.nA10 : null;
+  o.wrA30 = o.nA30 ? 100 * o.wA30 / o.nA30 : null;
+  o.wrB10 = o.nB10 ? 100 * o.wB10 / o.nB10 : null;
+  o.wrB30 = o.nB30 ? 100 * o.wB30 / o.nB30 : null;
+  o.wrC10 = o.nC10 ? 100 * o.wC10 / o.nC10 : null;
+  o.wrC30 = o.nC30 ? 100 * o.wC30 / o.nC30 : null;
+  return o;
+}
+
+/* ---------------- 渲染：头部 / 结论 / KPI ---------------- */
+let S = null;
+
+function renderMeta() {
+  const n = rows.length;
+  const t0 = n ? fmtTime(rows[0].t) : "—", t1 = n ? fmtTime(rows[n - 1].t) : "—";
+  document.getElementById("metaBar").innerHTML =
+    `<span>样本 <b>${n.toLocaleString()}</b> 条</span>
+     <span>区间 <b>${t0}</b> ~ <b>${t1}</b></span>
+     <span>币种 <b>${SYMS.join(" / ")}</b></span>
+     <span>数据源 <b>${esc(META.source || "strategy_data.csv")}</b></span>`;
+  document.getElementById("genAt").textContent = META.generated || "—";
+}
+
+function renderVerdict() {
+  const a = S.wrA10, c = S.wrC10;
+  const gap = (c != null && a != null) ? c - a : null;
+  const b = S.wrB10;
+  const tolOnly = (b != null && a != null) ? b - a : null;
+  const priceEff = (c != null && b != null) ? c - b : null;
+  let main;
+  if (gap != null && gap > 1) {
+    if (tolOnly != null && Math.abs(tolOnly) >= Math.abs(priceEff)) {
+      main = `main.py 记录的 ${pct(c)} 胜率比真实水平高 <b>${gap.toFixed(1)} 个百分点</b>，主因是判胜规则里的「波动小于 0.02% 无论方向都算赢」——把「方向判错但当时几乎没波动」的单子也计成了 ✅。`;
+    } else {
+      main = `main.py 记录的 ${pct(c)} 胜率比真实水平高 <b>${gap.toFixed(1)} 个百分点</b>，主因是结算价格用的是「结算那一刻的实时价」，而非预测时刻 +10 分钟的时点价。`;
+    }
+  } else {
+    main = `三种口径的 10 分钟胜率基本一致（差 ${gap == null ? "—" : gap.toFixed(1) + "pp"}），当前数据没有明显虚高。`;
+  }
+  document.getElementById("verdict").innerHTML = `
+    <div class="icon">!</div>
+    <div>
+      <h2>审计结论：真实方向胜率 ${pct(a)}，接近随机；程序记录的 ${pct(c)} 存在系统性虚高</h2>
+      <p>${main}
+      判定改为严格方向（<code>预测方向 == 真实涨跌</code>，无任何豁免）后，10 分钟胜率 <b>${pct(a)}</b>（n=${S.nA10.toLocaleString()}），30 分钟 <b>${pct(S.wrA30)}</b>；其中 main.py 记为 ✅ 但真实方向相反的有 <b>${S.fake.toLocaleString()}</b> 单。</p>
+    </div>`;
+}
+
+function kpiCard(cls, lab, dotCls, val, sub) {
+  return `<div class="kpi ${cls}">
+    <div class="lab"><span class="dot ${dotCls}"></span>${lab}</div>
+    <div class="val">${val}</div>
+    <div class="sub">${sub}</div>
+  </div>`;
+}
+
+function renderKpis() {
+  const gap10 = (S.wrC10 != null && S.wrA10 != null) ? S.wrC10 - S.wrA10 : null;
+  const gap30 = (S.wrC30 != null && S.wrA30 != null) ? S.wrC30 - S.wrA30 : null;
+  const fee = parseFloat(document.getElementById("fFee").value) || 0;
+  const net10 = S.ret10 - fee * 2 * S.nA10;
+  document.getElementById("kpis").innerHTML = [
+    kpiCard("strict", "严格口径 · 10 分钟胜率", "", pct(S.wrA10),
+      `n=${S.nA10.toLocaleString()} · 判对 ${S.wA10.toLocaleString()} 单`),
+    kpiCard("strict", "严格口径 · 30 分钟胜率", "", pct(S.wrA30),
+      `n=${S.nA30.toLocaleString()} · 判对 ${S.wA30.toLocaleString()} 单`),
+    kpiCard("mainrec", "main.py 记录 · 10 分钟", "amber", pct(S.wrC10),
+      `<span class="delta neg">${gap10 == null ? "—" : (gap10 > 0 ? "高 " : "") + gap10.toFixed(1) + "pp"}</span> 相较严格口径`),
+    kpiCard("mainrec", "main.py 记录 · 30 分钟", "amber", pct(S.wrC30),
+      `<span class="delta neg">${gap30 == null ? "—" : (gap30 > 0 ? "高 " : "") + gap30.toFixed(1) + "pp"}</span> 相较严格口径`),
+    kpiCard("", "累计收益（10m · 扣费前）", "slate",
+      `<span style="color:${S.ret10 >= 0 ? "var(--up)" : "var(--down)"}">${(S.ret10 >= 0 ? "+" : "") + S.ret10.toFixed(1)}%</span>`,
+      `每笔均值 ${bp(S.ret10 / Math.max(S.nA10, 1) * 100)} · 扣 ${(fee * 2).toFixed(2)}% 手续费后 ${(net10 >= 0 ? "+" : "") + net10.toFixed(0)}%`),
+    kpiCard("", "判胜虚高单量", "slate", S.fake.toLocaleString(),
+      `占 main 判对的 ${pct(100 * S.fake / Math.max(S.wC10, 1), 1)} · 最长连对 ${S.maxWin} / 连错 ${S.maxLoss}`)
+  ].join("");
+}
+
+/* ---------------- 渲染：三口径表 ---------------- */
+function renderCmp() {
+  const tolWins = S.wB10 - S.wA10, tolWins30 = S.wB30 - S.wA30;
+  const rowsHtml = [
+    ["A", "a", "严格方向（本页主口径）", S.wrA10, S.nA10, S.wrA30, S.nA30,
+      "预测方向 == 真实涨跌，无任何豁免", '<span class="tag ok">可交易口径</span>'],
+    ["B", "b", "原版规则 + 正确时点价", S.wrB10, S.nB10, S.wrB30, S.nB30,
+      `沿用「波动 &lt; 0.02% / 0.04% 算赢」，但价格取对（多判赢 ${tolWins.toLocaleString()} / ${tolWins30.toLocaleString()} 单）`,
+      '<span class="tag b">隔离阈值影响</span>'],
+    ["C", "c", "main.py 线上实际记录", S.wrC10, S.nC10, S.wrC30, S.nC30,
+      "读取 CSV 已有 ✅/❌，结算价为结算时刻实时价 + 判平豁免", '<span class="tag bad">含系统性偏差</span>']
+  ].map(r => `<tr>
+      <td><span class="tag ${r[1]}">${r[0]}</span></td>
+      <td>${r[2]}<div style="font-size:11.5px;color:var(--muted);margin-top:2px">${r[8]}</div></td>
+      <td class="num"><span class="big">${pct(r[3])}</span><div style="font-size:11.5px;color:var(--muted)">n=${r[4].toLocaleString()}</div></td>
+      <td class="num"><span class="big">${pct(r[5])}</span><div style="font-size:11.5px;color:var(--muted)">n=${r[6].toLocaleString()}</div></td>
+      <td style="font-size:12.3px;color:var(--ink2);max-width:330px">${r[7]}</td>
+    </tr>`).join("");
+  document.getElementById("cmpTable").innerHTML = `
+    <thead><tr><th style="width:56px">口径</th><th>判定方式</th><th style="width:130px">10 分钟胜率</th><th style="width:130px">30 分钟胜率</th><th>说明</th></tr></thead>
+    <tbody>${rowsHtml}</tbody>`;
+}
+
+/* ---------------- 渲染：图表 ---------------- */
+function setupCanvas(cv) {
+  const dpr = window.devicePixelRatio || 1;
+  const w = cv.clientWidth, h = cv.height;
+  cv.width = w * dpr; cv.height = h * dpr;
+  const ctx = cv.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+  return { ctx, w, h };
+}
+
+function drawLineChart(cv, tipEl, series, opts) {
+  const { ctx, w, h } = setupCanvas(cv);
+  const pad = { l: 46, r: 12, t: 14, b: 24 };
+  const iw = w - pad.l - pad.r, ih = h - pad.t - pad.b;
+  const allY = series.flatMap(s => s.points.map(p => p.y));
+  let yMin = Math.min(...allY, opts.yMin != null ? opts.yMin : Infinity);
+  let yMax = Math.max(...allY, opts.yMax != null ? opts.yMax : -Infinity);
+  if (!isFinite(yMin)) { yMin = 0; yMax = 1; }
+  const padY = (yMax - yMin) * 0.12 || 1;
+  yMin -= padY; yMax += padY;
+  const n = Math.max(...series.map(s => s.points.length));
+  const X = i => pad.l + (n <= 1 ? 0 : iw * i / (n - 1));
+  const Y = v => pad.t + ih * (1 - (v - yMin) / (yMax - yMin));
+
+  // 网格 + y 轴
+  ctx.font = "10.5px ui-monospace,monospace";
+  ctx.fillStyle = "#9aa5b4"; ctx.strokeStyle = "#eef1f6"; ctx.lineWidth = 1;
+  const ticks = 4;
+  for (let i = 0; i <= ticks; i++) {
+    const v = yMin + (yMax - yMin) * i / ticks, y = Y(v);
+    ctx.beginPath(); ctx.moveTo(pad.l, y); ctx.lineTo(w - pad.r, y); ctx.stroke();
+    ctx.textAlign = "right"; ctx.textBaseline = "middle";
+    ctx.fillText(opts.yFmt ? opts.yFmt(v) : v.toFixed(1), pad.l - 7, y);
+  }
+  // x 轴标签
+  if (opts.xLabels && opts.xLabels.length) {
+    const step = Math.max(1, Math.ceil(opts.xLabels.length / 6));
+    ctx.textAlign = "center"; ctx.textBaseline = "top"; ctx.fillStyle = "#9aa5b4";
+    for (let i = 0; i < opts.xLabels.length; i += step) {
+      ctx.fillText(opts.xLabels[i], X(i), h - pad.b + 7);
+    }
+  }
+  // 基准线
+  if (opts.zeroLine != null) {
+    const y = Y(opts.zeroLine);
+    ctx.save(); ctx.setLineDash([4, 4]); ctx.strokeStyle = "#cdd5e3"; ctx.beginPath();
+    ctx.moveTo(pad.l, y); ctx.lineTo(w - pad.r, y); ctx.stroke(); ctx.restore();
+  }
+  // 曲线
+  series.forEach(s => {
+    ctx.beginPath(); ctx.strokeStyle = s.color; ctx.lineWidth = s.width || 1.9;
+    ctx.lineJoin = "round"; ctx.lineCap = "round";
+    if (s.dash) ctx.setLineDash([5, 4]); else ctx.setLineDash([]);
+    s.points.forEach((p, i) => { const x = X(i), y = Y(p.y); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+    ctx.stroke(); ctx.setLineDash([]);
+    if (s.fill) {
+      ctx.lineTo(X(s.points.length - 1), Y(yMin)); ctx.lineTo(X(0), Y(yMin)); ctx.closePath();
+      const g = ctx.createLinearGradient(0, pad.t, 0, h - pad.b);
+      g.addColorStop(0, s.fill); g.addColorStop(1, "rgba(255,255,255,0)");
+      ctx.fillStyle = g; ctx.fill();
+    }
+  });
+  // 交互
+  cv.onmousemove = ev => {
+    const rect = cv.getBoundingClientRect();
+    const mx = ev.clientX - rect.left;
+    const i = clamp(Math.round((mx - pad.l) / (iw / Math.max(n - 1, 1))), 0, n - 1);
+    const lines = series.map(s => {
+      const p = s.points[Math.min(i, s.points.length - 1)];
+      return p ? `<span class="k">${s.name}</span> <b>${opts.tipFmt ? opts.tipFmt(p) : p.y}</b>` : "";
+    }).filter(Boolean);
+    const lbl = opts.xLabels ? opts.xLabels[Math.min(i, opts.xLabels.length - 1)] : i;
+    tipEl.innerHTML = `<div><b>${lbl}</b></div>` + lines.join("<div></div>");
+    tipEl.style.left = (X(i) + cv.offsetLeft) + "px";
+    tipEl.style.top = (pad.t + ih * 0.25) + "px";
+    tipEl.classList.add("on");
+  };
+  cv.onmouseleave = () => tipEl.classList.remove("on");
+}
+
+function renderCharts() {
+  // 每日胜率
+  const days = Object.keys(S.byDay).sort();
+  const p1 = [], p2 = [], labels = [];
+  for (const d of days) {
+    const o = S.byDay[d];
+    if (o.a[1] < 4) continue;
+    p1.push({ x: labels.length, y: 100 * o.a[0] / o.a[1], n: o.a[1] });
+    p2.push({ x: labels.length, y: o.c[1] ? 100 * o.c[0] / o.c[1] : null, n: o.c[1] });
+    labels.push(d.slice(5));
+  }
+  const p2f = p2.map(p => ({ x: p.x, y: p.y == null ? 0 : p.y, n: p.n }));
+  drawLineChart(document.getElementById("cvDaily"), document.getElementById("tipDaily"),
+    [{ name: "严格口径", color: "#3f63f5", points: p1, width: 2 },
+     { name: "main 记录", color: "#c98a1f", points: p2f, width: 1.7, dash: false }],
+    {
+      yFmt: v => v.toFixed(0) + "%", xLabels: labels, zeroLine: 50, yMin: 20, yMax: 80,
+      tipFmt: p => pct(p.y) + (p.n ? ` <span class="k">n=${p.n}</span>` : "")
+    });
+
+  // 收益曲线
+  const fee = parseFloat(document.getElementById("fFee").value) || 0;
+  let c10 = 0, c30 = 0;
+  const e10 = [], e30 = [];
+  const step = Math.max(1, Math.floor(S.nA10 / 420));
+  let i = 0;
+  for (const r of rows) {
+    if (r.r10 != null) {
+      c10 += (r.p10 === "看涨" ? r.r10 : -r.r10) - fee * 2;
+      i++;
+      if (i % step === 0) e10.push({ x: e10.length, y: c10, t: r.t });
+    }
+  }
+  let j = 0;
+  for (const r of rows) {
+    if (r.r30 != null) {
+      c30 += (r.p30 === "看涨" ? r.r30 : -r.r30) - fee * 2;
+      j++;
+      if (j % step === 0) e30.push({ x: e30.length, y: c30, t: r.t });
+    }
+  }
+  // 用时间对齐两条曲线
+  const n10 = e10.length, n30 = e30.length;
+  drawLineChart(document.getElementById("cvEquity"), document.getElementById("tipEquity"),
+    [{ name: "10m", color: "#3f63f5", points: e10, fill: "rgba(63,99,245,.10)" },
+     { name: "30m", color: "#8b6bf0", points: n30 ? e30.map((p, k) => ({ x: k, y: p.y, t: p.t })) : [{ x: 0, y: 0 }] }],
+    {
+      yFmt: v => v.toFixed(0) + "%", zeroLine: 0,
+      xLabels: e10.filter((_, k) => k % Math.max(1, Math.floor(n10 / 6)) === 0).map(p => fmtTime(p.t).slice(0, 10)),
+      tipFmt: p => (p.y >= 0 ? "+" : "") + p.y.toFixed(1) + "%" + (p.t ? ` <span class="k">${fmtTime(p.t).slice(5)}</span>` : "")
+    });
+}
+
+/* ---------------- 维度切片：胜率高地 / 低洼 ---------------- */
+const DOW = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"];
+const DIMS = {
+  hour:  { label: "时段（服务器时间整点）", order: Array.from({ length: 24 }, (_, i) => String(i).padStart(2, "0") + ":00"), key: r => String(r.tHour).padStart(2, "0") + ":00" },
+  dow:   { label: "星期", order: DOW, key: r => DOW[r.dow] },
+  month: { label: "月份", key: r => r.month },
+  sym:   { label: "币种", order: SYMS, key: r => r.sym },
+  conf:  { label: "AI 自报信心（10m）", key: r => r.c10 + "%" },
+  rsi:   { label: "5m RSI 区间", order: ["<30", "30-40", "40-50", "50-60", "60-70", ">=70"],
+           key: r => r.rsi == null ? null : (r.rsi < 30 ? "<30" : r.rsi < 40 ? "30-40" : r.rsi < 50 ? "40-50" : r.rsi < 60 ? "50-60" : r.rsi < 70 ? "60-70" : ">=70") },
+  bias:  { label: "EMA20 偏离度", order: ["<-0.5%", "-0.5~-0.15%", "-0.15~0.15%", "0.15~0.5%", ">=0.5%"],
+           key: r => r.bias == null ? null : (r.bias < -0.5 ? "<-0.5%" : r.bias < -0.15 ? "-0.5~-0.15%" : r.bias < 0.15 ? "-0.15~0.15%" : r.bias < 0.5 ? "0.15~0.5%" : ">=0.5%") },
+  vol:   { label: "近 2 小时已实现波动（五分位）", order: ["Q1 最低", "Q2", "Q3", "Q4", "Q5 最高"],
+           key: r => r.vq == null ? null : ["Q1 最低", "Q2", "Q3", "Q4", "Q5 最高"][r.vq] },
+  macd:  { label: "5m MACD 方向", order: ["MACD 正", "MACD 负"], key: r => r.macd == null ? null : (r.macd > 0 ? "MACD 正" : "MACD 负") }
+};
+
+function deriveFeatures() {
+  const vols = [];
+  for (const s in IDX) {
+    const arr = IDX[s];
+    let ema = null;
+    arr.forEach((r, i) => {
+      let sum = 0, c = 0;
+      for (let j = Math.max(1, i - 11); j <= i; j++) {
+        sum += Math.abs((arr[j].price - arr[j - 1].price) / arr[j - 1].price); c++;
+      }
+      r.vol = c ? sum / c : null;
+      if (r.vol != null) vols.push(r.vol);
+      ema = ema == null ? r.price : r.price * (2 / 21) + ema * (1 - 2 / 21);
+      r.bias = (r.price - ema) / ema * 100;
+    });
+  }
+  vols.sort((a, b) => a - b);
+  const q = p => vols[Math.min(vols.length - 1, Math.floor(vols.length * p))];
+  const th = [q(.2), q(.4), q(.6), q(.8)];
+  for (const r of rows) {
+    r.tHour = new Date(r.t * 1000).getUTCHours();
+    r.dow = (new Date(r.t * 1000).getUTCDay() + 6) % 7;
+    r.dowName = DOW[r.dow];
+    r.month = new Date(r.t * 1000).toISOString().slice(0, 7);
+    r.vq = r.vol == null ? null : (r.vol <= th[0] ? 0 : r.vol <= th[1] ? 1 : r.vol <= th[2] ? 2 : r.vol <= th[3] ? 3 : 4);
+  }
+}
+
+function normInv(p) {
+  const a = [-3.969683028665376e+01, 2.209460984245205e+02, -2.759285104469687e+02, 1.383577518672690e+02, -3.066479806614716e+01, 2.506628277459239e+00];
+  const b = [-5.447609879822406e+01, 1.615858368580409e+02, -1.556989798598866e+02, 6.680131188771972e+01, -1.328068155288572e+01];
+  const c = [-7.784894002430293e-03, -3.223964580411365e-01, -2.400758277161838e+00, -2.549732539343734e+00, 4.374664141464968e+00, 2.938163982698783e+00];
+  const d = [7.784695709041462e-03, 3.224671290700398e-01, 2.445134137142996e+00, 3.754408661907416e+00];
+  const pl = 0.02425;
+  if (p < pl) { const q = Math.sqrt(-2 * Math.log(p)); return (((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1); }
+  if (p <= 1 - pl) { const q = p - .5, r = q * q; return (((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5]) * q / (((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1); }
+  const q = Math.sqrt(-2 * Math.log(1 - p)); return -(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);
+}
+
+const ZOOM = { lo: 40, hi: 60 };
+const zw = p => clamp((p - ZOOM.lo) / (ZOOM.hi - ZOOM.lo) * 100, 0, 100);
+
+function sliceStats(dimKey) {
+  const dim = DIMS[dimKey];
+  const g = new Map();
+  for (const r of rows) {
+    if (r.r10 == null) continue;
+    const k = dim.key(r); if (k == null) continue;
+    let o = g.get(k); if (!o) { o = { w: 0, n: 0 }; g.set(k, o); }
+    o.n++; if (r.a10) o.w++;
+  }
+  const list = [...g.entries()].map(([k, o]) => {
+    const p = 100 * o.w / o.n;
+    const z = (p / 100 - .5) / Math.sqrt(.25 / o.n);
+    const ci = 1.96 * Math.sqrt((p / 100) * (1 - p / 100) / o.n) * 100;
+    return { k, p, n: o.n, z, ci };
+  });
+  const m = Math.max(list.length, 1);
+  const zc = normInv(1 - .025 / m);
+  list.forEach(x => { x.sig = Math.abs(x.z) >= zc ? 2 : Math.abs(x.z) >= 1.96 ? 1 : 0; });
+  if (dim.order) list.sort((a, b) => dim.order.indexOf(a.k) - dim.order.indexOf(b.k));
+  else list.sort((a, b) => b.p - a.p);
+  return { dim, list, zc, m };
+}
+
+function renderSlices() {
+  const key = document.querySelector("#segDim button.on").dataset.v;
+  const { dim, list, zc } = sliceStats(key);
+  document.getElementById("dimStat").textContent =
+    `${dim.label} · ${list.length} 个切片 · 显著阈值 |z|≥${zc.toFixed(2)}（已做多重比较校正）`;
+  document.getElementById("sliceBars").innerHTML = list.map(x => {
+    const c1 = zw(x.p - x.ci), c2 = zw(x.p + x.ci);
+    const star = x.sig === 2 ? '<span class="star">★★</span>' : x.sig === 1 ? '<span class="star">★</span>' : "";
+    return `<div class="row">
+      <span style="color:var(--ink2)">${x.k}</span>
+      <span class="track">
+        <span class="halfmark"></span>
+        <span class="whisker" style="left:${c1}%;width:${Math.max(c2 - c1, .6)}%"></span>
+        <span class="fill ${x.p < 50 ? 'low' : ''}" style="width:${zw(x.p)}%"></span>
+      </span>
+      <span class="num">${x.p.toFixed(1)}% ${star}
+        <span style="color:var(--muted)">n=${x.n.toLocaleString()}</span>
+        <span style="color:${x.z >= 0 ? "var(--up)" : "var(--down)"}">z${x.z >= 0 ? "+" : ""}${x.z.toFixed(2)}</span>
+      </span>
+    </div>`;
+  }).join("");
+
+  const eligible = list.filter(x => x.n >= 200);
+  const top = eligible.slice().sort((a, b) => b.p - a.p).slice(0, 5);
+  const bot = eligible.slice().sort((a, b) => a.p - b.p).slice(0, 5);
+  const li = (x, i) => `<li><b>${x.k}</b> <span class="mono" style="color:${x.p >= 50 ? "var(--up)" : "var(--down)"}">${x.p.toFixed(1)}%</span>
+     <span style="color:var(--muted)">n=${x.n.toLocaleString()} · z=${x.z.toFixed(2)}${x.sig === 2 ? " ★★" : x.sig === 1 ? " ★" : ""}</span></li>`;
+  document.getElementById("rankHigh").innerHTML =
+    `<h5>胜率高地 Top5 <span>样本 ≥200</span></h5><ol>${top.map(li).join("")}</ol>`;
+  document.getElementById("rankLow").innerHTML =
+    `<h5>胜率低洼 Top5 <span>样本 ≥200</span></h5><ol>${bot.map(li).join("")}</ol>`;
+  document.getElementById("sliceNote").innerHTML =
+    `条形按 <b>${ZOOM.lo}% ~ ${ZOOM.hi}%</b> 区间放大显示（中线为 50%），横杠为 95% 置信区间。<br>
+     z 值为「该切片胜率 ≠ 50%」的统计量；<span class="star">★★</span> 表示按切片数校正后仍显著（|z|≥${zc.toFixed(2)}），<span class="star">★</span> 为未校正显著。<br>
+     注意：这些是<b>描述性</b>结果，多个高/低点可能来自同一段行情（样本不独立），不能直接当交易信号使用。`;
+}
+
+function renderHeatmap() {
+  const cv = document.getElementById("cvHeat"), tip = document.getElementById("tipHeat");
+  const G = Array.from({ length: 7 }, () => Array.from({ length: 24 }, () => ({ w: 0, n: 0 })));
+  for (const r of rows) {
+    if (r.r10 == null || r.dow == null || r.tHour == null) continue;
+    const c = G[r.dow][r.tHour]; c.n++; if (r.a10) c.w++;
+  }
+  const { ctx, w, h } = setupCanvas(cv);
+  const pad = { l: 46, r: 14, t: 20, b: 22 };
+  const iw = w - pad.l - pad.r, ih = h - pad.t - pad.b;
+  const cw = iw / 24, ch = ih / 7;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const color = p => {
+    if (p == null) return "#f5f6f8";
+    const t = clamp((p - 44) / (56 - 44), 0, 1);
+    const r = Math.round(lerp(15, 217, t)), g = Math.round(lerp(157, 74, t)), b = Math.round(lerp(112, 74, t));
+    return `rgb(${r},${g},${b})`;
+  };
+  ctx.font = "10.5px ui-monospace,monospace"; ctx.textBaseline = "middle";
+  for (let d = 0; d < 7; d++) {
+    ctx.fillStyle = "#77828f"; ctx.textAlign = "right";
+    ctx.fillText(DOW[d], pad.l - 7, pad.t + ch * d + ch / 2);
+    for (let hr = 0; hr < 24; hr++) {
+      const c = G[d][hr], p = c.n ? 100 * c.w / c.n : null;
+      const x = pad.l + cw * hr, y = pad.t + ch * d;
+      ctx.fillStyle = color(p);
+      ctx.fillRect(x + 1, y + 1, cw - 2, ch - 2);
+      if (p != null && cw > 26) {
+        ctx.fillStyle = "rgba(255,255,255,.92)"; ctx.textAlign = "center";
+        ctx.font = "9.5px ui-monospace,monospace";
+        ctx.fillText(p.toFixed(0), x + cw / 2, y + ch / 2);
+      }
+    }
+  }
+  ctx.font = "10.5px ui-monospace,monospace"; ctx.fillStyle = "#77828f"; ctx.textAlign = "center"; ctx.textBaseline = "top";
+  for (let hr = 0; hr < 24; hr += 2) ctx.fillText(hr + "", pad.l + cw * hr + cw / 2, h - pad.b + 6);
+  cv.onmousemove = ev => {
+    const rect = cv.getBoundingClientRect();
+    const x = ev.clientX - rect.left - pad.l, y = ev.clientY - rect.top - pad.t;
+    if (x < 0 || y < 0 || x > iw || y > ih) { tip.classList.remove("on"); return; }
+    const hr = Math.floor(x / cw), d = Math.floor(y / ch);
+    const c = G[d] && G[d][hr]; if (!c || !c.n) { tip.classList.remove("on"); return; }
+    const p = 100 * c.w / c.n;
+    tip.innerHTML = `<div><b>${DOW[d]} ${String(hr).padStart(2, "0")}:00</b></div>
+      <span class="k">胜率</span> <b>${p.toFixed(1)}%</b> <span class="k">n=${c.n}</span>`;
+    tip.style.left = (pad.l + cw * hr + cw / 2) + "px";
+    tip.style.top = (pad.t + ch * d) + "px";
+    tip.classList.add("on");
+  };
+  cv.onmouseleave = () => tip.classList.remove("on");
+  const flat = G.flat().filter(c => c.n >= 30).map(c => ({ p: 100 * c.w / c.n, n: c.n }));
+  const best = flat.slice().sort((a, b) => b.p - a.p)[0];
+  const worst = flat.slice().sort((a, b) => a.p - b.p)[0];
+  document.getElementById("heatNote").innerHTML =
+    `24×7 = 168 个时段组合（样本 ≥30 的有 ${flat.length} 个）。最高格 <b>${best ? best.p.toFixed(1) + "% (n=" + best.n + ")" : "—"}</b>，最低格 <b>${worst ? worst.p.toFixed(1) + "% (n=" + worst.n + ")" : "—"}</b>
+     —— 单格样本量只有一百余笔，随机波动可达 ±8pp，请只把它当线索、不当结论。`;
+}
+
+function renderConfBars() {
+  const order = ["50-55", "55-60", "60-65", "65-70", "70-75", "75+"];
+  document.getElementById("confBars").innerHTML = order.map(k => {
+    const v = S.byConf[k]; if (!v || !v[1]) return "";
+    const wr = 100 * v[0] / v[1];
+    const wpx = clamp(wr, 0, 100);
+    return `<div class="row">
+      <span style="color:var(--ink2)">${k}%</span>
+      <span class="track"><span class="halfmark"></span>
+        <span class="fill ${wr < 50 ? 'mid' : ''}" style="width:${wpx}%"></span>
+      </span>
+      <span class="num">${wr.toFixed(1)}% <span style="color:var(--muted)">n=${v[1]}</span></span>
+    </div>`;
+  }).join("");
+}
+
+function renderDir() {
+  const keys = ["看涨", "看跌"].filter(k => S.byDir[k]);
+  const total = keys.reduce((s, k) => s + S.byDir[k].a[1], 0);
+  const bars = keys.map(k => {
+    const v = S.byDir[k].a, wr = 100 * v[0] / v[1], share = 100 * v[1] / total;
+    return `<div style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px">
+        <span><b>${k}</b> <span style="color:var(--muted)">${v[1].toLocaleString()} 单 · 占比 ${share.toFixed(1)}%</span></span>
+        <span class="mono" style="color:${wr >= 50 ? "var(--up)" : "var(--down)"}">${wr.toFixed(1)}%</span>
+      </div>
+      <div class="track" style="height:10px;background:#f0f2f6;border-radius:6px;overflow:hidden;position:relative">
+        <div style="height:100%;width:${clamp(wr, 0, 100)}%;background:${k === "看涨" ? "#d94a4a" : "#0f9d70"};opacity:.85;border-radius:6px"></div>
+        <div style="position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:#d5dbe6"></div>
+      </div>
+    </div>`;
+  }).join("");
+  const bias = S.byDir["看涨"] && S.byDir["看跌"]
+    ? (S.byDir["看涨"].a[1] - S.byDir["看跌"].a[1]) / total * 100 : 0;
+  document.getElementById("dirBlock").innerHTML = bars +
+    `<div style="font-size:12.3px;color:var(--ink2);background:#fafbfd;border:1px solid var(--line2);border-radius:10px;padding:10px 12px;margin-top:6px;line-height:1.7">
+      模型预测<b style="color:${Math.abs(bias) > 10 ? "var(--amber)" : "var(--ink)"}">${bias > 0 ? "偏多" : "偏空"} ${Math.abs(bias).toFixed(1)}%</b>
+      ——看涨与看跌的样本量并不均衡，但两边真实胜率都贴近 50%，说明方向的“信心”并未带来可用的预测力。
+     </div>`;
+}
+
+/* ---------------- 渲染：假胜样本 ---------------- */
+function renderFake() {
+  const list = rows.filter(r => r.c10w === true && r.r10 != null && !r.a10)
+    .sort((a, b) => Math.abs(b.r10) - Math.abs(a.r10)).slice(0, 6);
+  document.getElementById("fakeHint").innerHTML =
+    `共 ${S.fake.toLocaleString()} 单被 main.py 判为 ✅，但真实方向相反；下表按真实反向幅度排序取前 ${list.length} 条`;
+  const head = `<thead><tr>
+    <th>时间</th><th>币种</th><th>预测价</th><th>10m 预测</th><th>信心</th>
+    <th>真实 10m 涨跌</th><th>严格判定</th><th>main 判定</th><th>分析依据</th>
+  </tr></thead>`;
+  const body = list.map(r => `<tr>
+    <td class="mono">${fmtTime(r.t)}</td><td>${r.sym}</td>
+    <td class="mono">${r.price.toFixed(2)}</td>
+    <td><span class="chipx ${r.p10 === "看涨" ? "up" : "dn"}">${r.p10}</span></td>
+    <td class="mono">${r.c10}%</td>
+    <td class="mono ${r.r10 >= 0 ? "pos" : "neg"}">${bp(r.r10 * 100)}</td>
+    <td><span class="tag bad">❌ 判错</span></td>
+    <td><span class="tag ok">✅ 记胜</span></td>
+    <td class="strat" title="${esc(r.strategy)}">${esc(r.strategy)}</td>
+  </tr>`).join("");
+  document.getElementById("fakeTable").innerHTML = head + "<tbody>" + body + "</tbody>";
+}
+
+/* ---------------- 明细表 ---------------- */
+let page = 1, sortKey = "t", sortDir = -1, filtered = [];
+function applyFilter() {
+  const sym = document.getElementById("fSym").value;
+  const pred = document.getElementById("fPred").value;
+  const key = document.getElementById("fKey").value.trim();
+  const res = document.querySelector("#segRes button.on").dataset.v;
+  filtered = rows.filter(r => {
+    if (sym && r.sym !== sym) return false;
+    if (pred && r.p10 !== pred) return false;
+    if (key && r.strategy.indexOf(key) < 0) return false;
+    if (res === "win" && !r.a10) return false;
+    if (res === "loss" && (r.a10 || r.r10 == null)) return false;
+    if (res === "fake" && !(r.c10w === true && r.r10 != null && !r.a10)) return false;
+    return true;
+  });
+  sortRows();
+  page = 1;
+  const f = filtered.filter(r => r.r10 != null);
+  const wr = f.length ? 100 * f.filter(r => r.a10).length / f.length : null;
+  document.getElementById("filterStat").textContent =
+    `筛选结果 ${filtered.length.toLocaleString()} 条 · 其中可结算 ${f.length.toLocaleString()} 条 · 严格胜率 ${pct(wr)}`;
+  document.getElementById("rowHint").textContent = `共 ${rows.length.toLocaleString()} 行，点击表头可排序`;
+  renderPage();
+}
+function sortRows() {
+  const k = sortKey, dir = sortDir;
+  filtered.sort((a, b) => {
+    let x = a[k], y = b[k];
+    if (x == null) x = -Infinity; if (y == null) y = -Infinity;
+    if (typeof x === "string") return x < y ? -dir : x > y ? dir : 0;
+    return (x - y) * dir;
+  });
+}
+function cellRet(v) {
+  if (v == null) return '<span class="pend">无数据</span>';
+  return `<span class="mono ${v >= 0 ? "pos" : "neg"}">${bp(v * 100)}</span>`;
+}
+function cellJudge(win, has) {
+  if (!has) return '<span class="pend">—</span>';
+  return win ? '<span class="tag ok">✅ 对</span>' : '<span class="tag bad">❌ 错</span>';
+}
+function cellMain(v) {
+  if (v === null) return '<span class="pend">⏳</span>';
+  return v ? '<span class="tag ok">✅</span>' : '<span class="tag bad">❌</span>';
+}
+function renderPage() {
+  const ps = parseInt(document.getElementById("pageSize").value, 10);
+  const total = filtered.length, pages = Math.max(1, Math.ceil(total / ps));
+  page = clamp(page, 1, pages);
+  const slice = filtered.slice((page - 1) * ps, page * ps);
+  const head = `<thead><tr>
+    <th data-k="t">时间</th><th data-k="sym">币种</th><th data-k="price">预测价</th>
+    <th class="nosort">10m 预测</th><th data-k="c10">信心</th><th class="nosort">真实 10m</th>
+    <th class="nosort">严格</th><th class="nosort">main</th>
+    <th class="nosort">30m 预测</th><th data-k="c30">信心</th><th class="nosort">真实 30m</th>
+    <th class="nosort">严格</th><th class="nosort">main</th>
+    <th class="nosort">RSI</th><th class="nosort">分析依据</th>
+  </tr></thead>`;
+  const body = slice.map(r => `<tr>
+    <td class="mono">${fmtTime(r.t)}</td>
+    <td>${r.sym}</td>
+    <td class="mono">${r.price.toFixed(2)}</td>
+    <td><span class="chipx ${r.p10 === "看涨" ? "up" : "dn"}">${r.p10}</span></td>
+    <td class="mono">${r.c10}%</td>
+    <td>${cellRet(r.r10)}</td>
+    <td>${cellJudge(r.a10, r.r10 != null)}</td>
+    <td>${cellMain(r.c10w)}</td>
+    <td><span class="chipx ${r.p30 === "看涨" ? "up" : "dn"}">${r.p30}</span></td>
+    <td class="mono">${r.c30}%</td>
+    <td>${cellRet(r.r30)}</td>
+    <td>${cellJudge(r.a30, r.r30 != null)}</td>
+    <td>${cellMain(r.c30w)}</td>
+    <td class="mono">${r.rsi != null ? r.rsi : "—"}</td>
+    <td class="strat" title="${esc(r.strategy)}">${esc(r.strategy)}</td>
+  </tr>`).join("");
+  document.getElementById("dataTable").innerHTML = head + "<tbody>" + body + "</tbody>";
+  document.querySelectorAll("#dataTable thead th[data-k]").forEach(th => {
+    th.onclick = () => {
+      const k = th.dataset.k;
+      if (sortKey === k) sortDir *= -1; else { sortKey = k; sortDir = -1; }
+      sortRows(); renderPage();
+    };
+  });
+  document.getElementById("pageInfo").textContent =
+    `第 ${page} / ${pages} 页 · 共 ${total.toLocaleString()} 条`;
+  document.getElementById("prev").disabled = page <= 1;
+  document.getElementById("next").disabled = page >= pages;
+}
+
+/* ---------------- CSV 导入 ---------------- */
+function parseCSV(text) {
+  const out = []; let row = [], cur = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) {
+      if (c === '"') { if (text[i + 1] === '"') { cur += '"'; i++; } else q = false; }
+      else cur += c;
+    } else {
+      if (c === '"') q = true;
+      else if (c === ",") { row.push(cur); cur = ""; }
+      else if (c === "\n") { row.push(cur); out.push(row); row = []; cur = ""; }
+      else if (c === "\r") { }
+      else cur += c;
+    }
+  }
+  if (cur.length || row.length) { row.push(cur); out.push(row); }
+  return out;
+}
+function importCSV(text) {
+  const tbl = parseCSV(text.replace(/^\uFEFF/, ""));
+  if (!tbl.length) return alert("CSV 为空");
+  const hd = tbl[0].map(s => s.trim());
+  const col = n => hd.indexOf(n);
+  const iT = col("time"), iS = col("symbol"), iP = col("price"), iP10 = col("pred_10m"), iP30 = col("pred_30m"),
+    iC10 = col("conf_10m"), iC30 = col("conf_30m"), iB10 = col("backtest_10m"), iB30 = col("backtest_30m"),
+    iSg = col("strategy"), iRsi = col("rsi"), iMc = col("macd");
+  if ([iT, iS, iP, iP10].some(x => x < 0)) return alert("CSV 缺少必要列（time/symbol/price/pred_10m）");
+  const syms = [];
+  const raw = [];
+  for (let i = 1; i < tbl.length; i++) {
+    const r = tbl[i]; if (!r || !r[iT]) continue;
+    const sym = r[iS];
+    let si = syms.indexOf(sym); if (si < 0) { syms.push(sym); si = syms.length - 1; }
+    const ts = Math.floor(Date.parse(r[iT].trim().replace(" ", "T") + "Z") / 1000);
+    if (isNaN(ts)) continue;
+    raw.push([ts, si, parseFloat(r[iP]), r[iP10] && r[iP10].indexOf("看涨") >= 0 ? 1 : 0,
+      r[iP30] && r[iP30].indexOf("看涨") >= 0 ? 1 : 0,
+      parseInt(r[iC10], 10) || 60, parseInt(r[iC30], 10) || 60,
+      (r[iB10] || "").indexOf("✅") === 0 ? 1 : (r[iB10] || "").indexOf("❌") === 0 ? 0 : -1,
+      (r[iB30] || "").indexOf("✅") === 0 ? 1 : (r[iB30] || "").indexOf("❌") === 0 ? 0 : -1,
+      (r[iSg] || "").slice(0, 60),
+      (iRsi >= 0 && r[iRsi] !== "" && r[iRsi] != null) ? parseFloat(r[iRsi]) : null,
+      (iMc >= 0 && r[iMc] !== "" && r[iMc] != null) ? parseFloat(r[iMc]) : null]);
+  }
+  if (!raw.length) return alert("没有解析到有效行");
+  META.syms = syms; SYMS.length = 0; syms.forEach(s => SYMS.push(s));
+  META.generated = new Date().toLocaleString("zh-CN");
+  META.source = "用户导入 CSV";
+  bootWith(raw);
+}
+
+/* ---------------- 初始化 ---------------- */
+function bootWith(raw) {
+  loadRaw(raw);
+  S = agg(rows);
+  renderMeta(); renderVerdict(); renderKpis(); renderCmp();
+  renderCharts(); renderConfBars(); renderDir(); renderFake();
+  renderSlices(); renderHeatmap();
+  const sel = document.getElementById("fSym");
+  sel.innerHTML = '<option value="">全部币种</option>' + SYMS.map(s => `<option>${s}</option>`).join("");
+  applyFilter();
+}
+document.getElementById("segRes").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  document.querySelectorAll("#segRes button").forEach(x => x.classList.remove("on"));
+  b.classList.add("on"); applyFilter();
+});
+["fSym", "fPred"].forEach(id => document.getElementById(id).addEventListener("change", applyFilter));
+document.getElementById("segDim").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  document.querySelectorAll("#segDim button").forEach(x => x.classList.remove("on"));
+  b.classList.add("on"); renderSlices();
+});
+let keyTimer;
+document.getElementById("fKey").addEventListener("input", () => { clearTimeout(keyTimer); keyTimer = setTimeout(applyFilter, 220); });
+document.getElementById("fFee").addEventListener("change", () => { renderKpis(); renderCharts(); });
+document.getElementById("pageSize").addEventListener("change", () => { page = 1; renderPage(); });
+document.getElementById("prev").onclick = () => { if (page > 1) { page--; renderPage(); } };
+document.getElementById("next").onclick = () => { page++; renderPage(); };
+document.getElementById("csvFile").addEventListener("change", e => {
+  const f = e.target.files[0]; if (!f) return;
+  const rd = new FileReader();
+  rd.onload = () => importCSV(rd.result);
+  rd.readAsText(f, "utf-8");
+});
+document.getElementById("btnExport").onclick = () => {
+  const lines = [
+    "量化程序回测审计报告",
+    "生成时间: " + (META.generated || ""),
+    "样本: " + rows.length + " 行, 区间 " + fmtTime(rows[0].t) + " ~ " + fmtTime(rows[rows.length - 1].t),
+    "",
+    "严格口径(方向一致即赢, 无豁免): 10m " + pct(S.wrA10) + " (n=" + S.nA10 + "), 30m " + pct(S.wrA30) + " (n=" + S.nA30 + ")",
+    "原版规则+正确价格:            10m " + pct(S.wrB10) + ", 30m " + pct(S.wrB30),
+    "main.py 实际记录:             10m " + pct(S.wrC10) + " (n=" + S.nC10 + "), 30m " + pct(S.wrC30),
+    "判胜虚高单量: " + S.fake + " 单 (main 记胜但方向相反)",
+    "累计收益(按预测方向, 未扣费): 10m " + S.ret10.toFixed(2) + "%, 30m " + S.ret30.toFixed(2) + "%",
+    "",
+    "分币种(严格10m): " + Object.entries(S.bySym).map(([k, v]) => k + " " + (100 * v.a[0] / v.a[1]).toFixed(1) + "%/n=" + v.a[1]).join(", "),
+    "分方向(严格10m): " + Object.entries(S.byDir).map(([k, v]) => k + " " + (100 * v.a[0] / v.a[1]).toFixed(1) + "%/n=" + v.a[1]).join(", "),
+    "最长连对 " + S.maxWin + " / 连错 " + S.maxLoss,
+    "",
+    "=== 胜率高地 / 低洼（严格 10m，样本≥200）===",
+    ...Object.keys(DIMS).map(k => {
+      const { dim, list } = sliceStats(k);
+      const e = list.filter(x => x.n >= 200).sort((a, b) => b.p - a.p);
+      if (!e.length) return dim.label + ": 无足够样本";
+      return dim.label + " → 最高: " + e.slice(0, 3).map(x => `${x.k} ${x.p.toFixed(1)}% (n=${x.n},z=${x.z.toFixed(2)})`).join(" | ")
+        + " ; 最低: " + e.slice(-3).reverse().map(x => `${x.k} ${x.p.toFixed(1)}% (n=${x.n},z=${x.z.toFixed(2)})`).join(" | ");
+    })
+  ].join("\n");
+  const blob = new Blob(["\uFEFF" + lines], { type: "text/plain;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "回测审计结论.txt"; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+};
+window.addEventListener("resize", () => { if (S) { renderCharts(); renderHeatmap(); } });
+bootWith(RAW);
+</script>
+</body>
+</html>

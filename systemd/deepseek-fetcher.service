@@ -1,0 +1,21 @@
+[Unit]
+Description=DeepSeek Strategy Data Fetcher (main.py)
+After=network.target
+
+[Service]
+Type=simple
+# ====== 按需修改：运行用户 & 项目目录 ======
+User=root
+Group=root
+WorkingDirectory=/opt/deepseek
+# 如果用 venv 就改成 /opt/deepseek/venv/bin/python
+ExecStart=/usr/bin/python3 -u /opt/deepseek/main.py
+
+Restart=always
+RestartSec=15
+# 抓取脚本永不停止，任何异常都重启
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

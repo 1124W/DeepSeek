@@ -1,0 +1,27 @@
+[Unit]
+Description=DeepSeek Strategy Dashboard (Gunicorn, port 8002)
+After=network.target
+
+[Service]
+Type=simple
+# ====== 按需修改：运行用户 & 项目目录 ======
+User=root
+Group=root
+WorkingDirectory=/opt/deepseek
+# 如果用 venv 就改成 /opt/deepseek/venv/bin/gunicorn
+ExecStart=/usr/bin/python3 -m gunicorn \
+    --workers 3 \
+    --bind 0.0.0.0:8002 \
+    --access-logfile /opt/deepseek/logs/dashboard_access.log \
+    --error-logfile /opt/deepseek/logs/dashboard_error.log \
+    --timeout 60 \
+    dashboard_final:app
+
+Restart=always
+RestartSec=5
+# 标准输出/错误写入 journalctl，命令见 README
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

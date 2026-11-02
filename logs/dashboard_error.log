@@ -1,0 +1,2224 @@
+[2026-08-08 01:05:34 +0000] [1236903] [INFO] Starting gunicorn 26.0.0
+[2026-08-08 01:05:34 +0000] [1236903] [INFO] Listening at: http://0.0.0.0:8002 (1236903)
+[2026-08-08 01:05:34 +0000] [1236903] [INFO] Using worker: sync
+[2026-08-08 01:05:34 +0000] [1236904] [INFO] Booting worker with pid: 1236904
+[2026-08-08 01:05:34 +0000] [1236906] [INFO] Booting worker with pid: 1236906
+[2026-08-08 01:05:34 +0000] [1236908] [INFO] Booting worker with pid: 1236908
+[2026-08-08 01:05:35 +0000] [1236903] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 01:16:01 +0000] [1236908] [INFO] Worker exiting (pid: 1236908)
+[2026-08-08 01:16:01 +0000] [1236906] [INFO] Worker exiting (pid: 1236906)
+[2026-08-08 01:16:01 +0000] [1236903] [INFO] Handling signal: term
+[2026-08-08 01:16:01 +0000] [1236903] [INFO] Worker (pid:1236906) was sent SIGTERM!
+[2026-08-08 01:16:01 +0000] [1236903] [INFO] Worker (pid:1236908) was sent SIGTERM!
+[2026-08-08 01:16:01 +0000] [1236904] [INFO] Worker exiting (pid: 1236904)
+[2026-08-08 01:16:02 +0000] [1236903] [INFO] Shutting down: Master
+[2026-08-08 01:16:02 +0000] [1236984] [INFO] Starting gunicorn 26.0.0
+[2026-08-08 01:16:02 +0000] [1236984] [INFO] Listening at: http://0.0.0.0:8002 (1236984)
+[2026-08-08 01:16:02 +0000] [1236984] [INFO] Using worker: sync
+[2026-08-08 01:16:02 +0000] [1236985] [INFO] Booting worker with pid: 1236985
+[2026-08-08 01:16:02 +0000] [1236987] [INFO] Booting worker with pid: 1236987
+[2026-08-08 01:16:02 +0000] [1236989] [INFO] Booting worker with pid: 1236989
+[2026-08-08 01:16:02 +0000] [1236984] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 01:20:22 +0000] [1236985] [INFO] Worker exiting (pid: 1236985)
+[2026-08-08 01:20:22 +0000] [1236989] [INFO] Worker exiting (pid: 1236989)
+[2026-08-08 01:20:22 +0000] [1236987] [INFO] Worker exiting (pid: 1236987)
+[2026-08-08 01:20:22 +0000] [1236984] [INFO] Handling signal: term
+[2026-08-08 01:20:22 +0000] [1236984] [INFO] Worker (pid:1236985) was sent SIGTERM!
+[2026-08-08 01:20:22 +0000] [1236984] [INFO] Worker (pid:1236987) was sent SIGTERM!
+[2026-08-08 01:20:22 +0000] [1236984] [INFO] Worker (pid:1236989) was sent SIGTERM!
+[2026-08-08 01:20:22 +0000] [1236984] [INFO] Shutting down: Master
+[2026-08-08 09:20:23 +0800] [1237291] [INFO] Starting gunicorn 26.0.0
+[2026-08-08 09:20:23 +0800] [1237291] [INFO] Listening at: http://0.0.0.0:8002 (1237291)
+[2026-08-08 09:20:23 +0800] [1237291] [INFO] Using worker: sync
+[2026-08-08 09:20:23 +0800] [1237336] [INFO] Booting worker with pid: 1237336
+[2026-08-08 09:20:23 +0800] [1237355] [INFO] Booting worker with pid: 1237355
+[2026-08-08 09:20:23 +0800] [1237368] [INFO] Booting worker with pid: 1237368
+[2026-08-08 09:20:23 +0800] [1237291] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 09:34:20 +0800] [1237291] [INFO] Handling signal: term
+[2026-08-08 09:34:20 +0800] [1237336] [INFO] Worker exiting (pid: 1237336)
+[2026-08-08 09:34:20 +0800] [1237368] [INFO] Worker exiting (pid: 1237368)
+[2026-08-08 09:34:20 +0800] [1237355] [INFO] Worker exiting (pid: 1237355)
+[2026-08-08 09:34:20 +0800] [1237291] [INFO] Worker (pid:1237336) was sent SIGTERM!
+[2026-08-08 09:34:20 +0800] [1237291] [INFO] Worker (pid:1237355) was sent SIGTERM!
+[2026-08-08 09:34:20 +0800] [1237291] [INFO] Worker (pid:1237368) was sent SIGTERM!
+[2026-08-08 09:34:20 +0800] [1237291] [INFO] Shutting down: Master
+[2026-08-08 09:34:21 +0800] [1237943] [INFO] Starting gunicorn 26.0.0
+[2026-08-08 09:34:21 +0800] [1237943] [INFO] Listening at: http://0.0.0.0:8002 (1237943)
+[2026-08-08 09:34:21 +0800] [1237943] [INFO] Using worker: sync
+[2026-08-08 09:34:21 +0800] [1237946] [INFO] Booting worker with pid: 1237946
+[2026-08-08 09:34:21 +0800] [1237948] [INFO] Booting worker with pid: 1237948
+[2026-08-08 09:34:21 +0800] [1237950] [INFO] Booting worker with pid: 1237950
+[2026-08-08 09:34:21 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 09:44:07 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1237948)
+[2026-08-08 09:44:07 +0800] [1237948] [INFO] Worker exiting (pid: 1237948)
+[2026-08-08 09:44:07 +0800] [1237943] [ERROR] Worker (pid:1237948) exited with code 1.
+[2026-08-08 09:44:07 +0800] [1237994] [INFO] Booting worker with pid: 1237994
+[2026-08-08 09:44:07 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 09:45:07 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1237950)
+[2026-08-08 09:45:07 +0800] [1237950] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-08 09:45:07 +0800] [1237950] [INFO] Worker exiting (pid: 1237950)
+[2026-08-08 09:45:07 +0800] [1238000] [INFO] Booting worker with pid: 1238000
+[2026-08-08 09:45:07 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 09:46:06 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1237946)
+[2026-08-08 09:46:06 +0800] [1237946] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-08 09:46:07 +0800] [1237946] [INFO] Worker exiting (pid: 1237946)
+[2026-08-08 09:46:07 +0800] [1238009] [INFO] Booting worker with pid: 1238009
+[2026-08-08 09:46:07 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 13:59:25 +0800] [1238000] [WARNING] Invalid request from ip=139.162.3.141: Invalid HTTP request line: ''
+[2026-08-08 13:59:31 +0800] [1238009] [WARNING] Invalid request from ip=139.162.3.141: Invalid HTTP Version: 'RTSP/1.0'
+[2026-08-08 13:59:46 +0800] [1238009] [WARNING] Invalid request from ip=139.162.3.141: Invalid HTTP request line: 'HELP'
+[2026-08-08 13:59:51 +0800] [1238000] [WARNING] Invalid request from ip=139.162.3.141: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nmap'
+[2026-08-08 14:00:27 +0800] [1238009] [WARNING] Invalid request from ip=139.162.3.141: Invalid HTTP request line: 'OPTIONS sip:nm SIP/2.0'
+[2026-08-08 21:16:44 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1238000)
+[2026-08-08 21:16:44 +0800] [1238000] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-08 21:16:44 +0800] [1238000] [INFO] Worker exiting (pid: 1238000)
+[2026-08-08 21:16:45 +0800] [1246979] [INFO] Booting worker with pid: 1246979
+[2026-08-08 21:16:45 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 21:17:44 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1238009)
+[2026-08-08 21:17:44 +0800] [1238009] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-08 21:17:44 +0800] [1238009] [INFO] Worker exiting (pid: 1238009)
+[2026-08-08 21:17:44 +0800] [1247002] [INFO] Booting worker with pid: 1247002
+[2026-08-08 21:17:44 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 21:18:43 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1246979)
+[2026-08-08 21:18:43 +0800] [1246979] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-08 21:18:44 +0800] [1246979] [INFO] Worker exiting (pid: 1246979)
+[2026-08-08 21:18:44 +0800] [1247022] [INFO] Booting worker with pid: 1247022
+[2026-08-08 21:18:44 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 21:19:44 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1237994)
+[2026-08-08 21:19:44 +0800] [1237994] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-08 21:19:45 +0800] [1237994] [INFO] Worker exiting (pid: 1237994)
+[2026-08-08 21:19:45 +0800] [1237943] [ERROR] Worker (pid:1237994) was sent SIGKILL! Perhaps out of memory?
+[2026-08-08 21:19:45 +0800] [1247040] [INFO] Booting worker with pid: 1247040
+[2026-08-08 21:19:45 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-08 21:20:52 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1247022)
+[2026-08-08 21:20:52 +0800] [1247022] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-08 21:20:53 +0800] [1237943] [ERROR] Worker (pid:1247022) was sent SIGKILL! Perhaps out of memory?
+[2026-08-08 21:20:53 +0800] [1247062] [INFO] Booting worker with pid: 1247062
+[2026-08-08 21:20:53 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-09 15:00:42 +0800] [1247040] [WARNING] Invalid request from ip=172.232.232.10: Invalid HTTP request line: ''
+[2026-08-09 15:00:49 +0800] [1247062] [WARNING] Invalid request from ip=172.232.232.10: Invalid HTTP Version: 'RTSP/1.0'
+[2026-08-09 15:01:04 +0800] [1247040] [WARNING] Invalid request from ip=172.232.232.10: Invalid HTTP request line: 'HELP'
+[2026-08-09 15:01:09 +0800] [1247040] [WARNING] Invalid request from ip=172.232.232.10: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nmap'
+[2026-08-09 15:01:45 +0800] [1247040] [WARNING] Invalid request from ip=172.232.232.10: Invalid HTTP request line: 'OPTIONS sip:nm SIP/2.0'
+[2026-08-09 21:26:15 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1247062)
+[2026-08-09 21:26:15 +0800] [1247062] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-09 21:26:16 +0800] [1247062] [INFO] Worker exiting (pid: 1247062)
+[2026-08-09 21:26:16 +0800] [1237943] [ERROR] Worker (pid:1247062) was sent SIGKILL! Perhaps out of memory?
+[2026-08-09 21:26:16 +0800] [1256474] [INFO] Booting worker with pid: 1256474
+[2026-08-09 21:26:16 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-09 21:27:15 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1247040)
+[2026-08-09 21:27:15 +0800] [1247040] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-09 21:27:16 +0800] [1247040] [INFO] Worker exiting (pid: 1247040)
+[2026-08-09 21:27:16 +0800] [1256482] [INFO] Booting worker with pid: 1256482
+[2026-08-09 21:27:16 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-09 21:28:15 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1256474)
+[2026-08-09 21:28:15 +0800] [1256474] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-09 21:28:16 +0800] [1256474] [INFO] Worker exiting (pid: 1256474)
+[2026-08-09 21:28:16 +0800] [1256485] [INFO] Booting worker with pid: 1256485
+[2026-08-09 21:28:16 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-09 21:29:15 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1247002)
+[2026-08-09 21:29:15 +0800] [1247002] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-09 21:29:15 +0800] [1247002] [INFO] Worker exiting (pid: 1247002)
+[2026-08-09 21:29:16 +0800] [1256491] [INFO] Booting worker with pid: 1256491
+[2026-08-09 21:29:16 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-09 21:53:27 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1256482)
+[2026-08-09 21:53:27 +0800] [1256482] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-09 21:53:28 +0800] [1237943] [ERROR] Worker (pid:1256482) was sent SIGKILL! Perhaps out of memory?
+[2026-08-09 21:53:28 +0800] [1256565] [INFO] Booting worker with pid: 1256565
+[2026-08-09 21:53:28 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-09 21:55:27 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1256491)
+[2026-08-09 21:55:27 +0800] [1256491] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-09 21:55:28 +0800] [1237943] [ERROR] Worker (pid:1256491) was sent SIGKILL! Perhaps out of memory?
+[2026-08-09 21:55:28 +0800] [1256576] [INFO] Booting worker with pid: 1256576
+[2026-08-09 21:55:28 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-09 21:57:27 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1256565)
+[2026-08-09 21:57:27 +0800] [1256565] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-09 21:57:28 +0800] [1237943] [ERROR] Worker (pid:1256565) was sent SIGKILL! Perhaps out of memory?
+[2026-08-09 21:57:28 +0800] [1256590] [INFO] Booting worker with pid: 1256590
+[2026-08-09 21:57:28 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-10 07:21:24 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1256485)
+[2026-08-10 07:21:24 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1256576)
+[2026-08-10 07:21:24 +0800] [1256485] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=30m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-10 07:21:24 +0800] [1256576] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-10 07:21:25 +0800] [1237943] [ERROR] Worker (pid:1256576) was sent SIGKILL! Perhaps out of memory?
+[2026-08-10 07:21:25 +0800] [1237943] [ERROR] Worker (pid:1256485) was sent SIGKILL! Perhaps out of memory?
+[2026-08-10 07:21:25 +0800] [1262341] [INFO] Booting worker with pid: 1262341
+[2026-08-10 07:21:25 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-10 07:21:25 +0800] [1262344] [INFO] Booting worker with pid: 1262344
+[2026-08-10 07:21:25 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-10 12:00:54 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1256590)
+[2026-08-10 12:00:54 +0800] [1256590] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-10 12:00:55 +0800] [1237943] [ERROR] Worker (pid:1256590) was sent SIGKILL! Perhaps out of memory?
+[2026-08-10 12:00:55 +0800] [1269951] [INFO] Booting worker with pid: 1269951
+[2026-08-10 12:00:55 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-10 12:11:02 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1262344)
+[2026-08-10 12:11:02 +0800] [1262344] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=100&bet_amt=10&payout_rt=0.8
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-10 12:11:03 +0800] [1237943] [ERROR] Worker (pid:1262344) was sent SIGKILL! Perhaps out of memory?
+[2026-08-10 12:11:03 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-10 12:11:03 +0800] [1270173] [INFO] Booting worker with pid: 1270173
+[2026-08-10 21:49:22 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1269951)
+[2026-08-10 21:49:22 +0800] [1269951] [INFO] Worker exiting (pid: 1269951)
+[2026-08-10 21:49:23 +0800] [1237943] [ERROR] Worker (pid:1269951) exited with code 1.
+[2026-08-10 21:49:23 +0800] [1277317] [INFO] Booting worker with pid: 1277317
+[2026-08-10 21:49:23 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-12 17:56:39 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1270173)
+[2026-08-12 17:56:39 +0800] [1270173] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 184, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 272, in api_data
+    df, df_equity_src, stats, error = process_data()
+                                      ^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 232, in process_data
+    "btc_30m": calc_single_rate(df_full, "BTC", "backtest_30m"),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 32, in calc_single_rate
+    valid_trades = series[series.str.contains(r'✅|❌', na=False)]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/accessor.py", line 142, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/accessor.py", line 1496, in contains
+    result = self._data.array._str_contains(pat, case, flags, na, regex)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/object_array.py", line 160, in _str_contains
+    return self._str_map(f, na, dtype=np.dtype("bool"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/arrays/string_.py", line 472, in _str_map
+    return self._str_map_nan_semantics(f, na_value=na_value, dtype=dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/arrays/string_.py", line 581, in _str_map_nan_semantics
+    result = lib.map_infer_mask(
+             ^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 3023, in pandas._libs.lib.map_infer_mask
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/object_array.py", line 154, in <lambda>
+    f = lambda x: pat.search(x) is not None
+    
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-12 17:56:39 +0800] [1270173] [INFO] Worker exiting (pid: 1270173)
+[2026-08-12 17:56:39 +0800] [1305399] [INFO] Booting worker with pid: 1305399
+[2026-08-12 17:56:39 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-12 17:57:39 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1262341)
+[2026-08-12 17:57:39 +0800] [1262341] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-12 17:57:40 +0800] [1262341] [INFO] Worker exiting (pid: 1262341)
+[2026-08-12 17:57:40 +0800] [1305403] [INFO] Booting worker with pid: 1305403
+[2026-08-12 17:57:40 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-12 17:58:39 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1305399)
+[2026-08-12 17:58:39 +0800] [1305399] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-12 17:58:39 +0800] [1305399] [INFO] Worker exiting (pid: 1305399)
+[2026-08-12 17:58:40 +0800] [1305407] [INFO] Booting worker with pid: 1305407
+[2026-08-12 17:58:40 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-12 17:59:40 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1277317)
+[2026-08-12 17:59:40 +0800] [1277317] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-12 17:59:40 +0800] [1277317] [INFO] Worker exiting (pid: 1277317)
+[2026-08-12 17:59:41 +0800] [1305410] [INFO] Booting worker with pid: 1305410
+[2026-08-12 17:59:41 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-12 20:25:10 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1305407)
+[2026-08-12 20:25:10 +0800] [1305407] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=30m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.85
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-12 20:25:11 +0800] [1305407] [INFO] Worker exiting (pid: 1305407)
+[2026-08-12 20:25:11 +0800] [1305941] [INFO] Booting worker with pid: 1305941
+[2026-08-12 20:25:11 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-13 07:47:27 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1305403)
+[2026-08-13 07:47:27 +0800] [1305403] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-13 07:47:27 +0800] [1305403] [INFO] Worker exiting (pid: 1305403)
+[2026-08-13 07:47:28 +0800] [1311448] [INFO] Booting worker with pid: 1311448
+[2026-08-13 07:47:28 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-14 19:05:54 +0800] [1305941] [WARNING] Invalid request from ip=172.232.232.179: Invalid HTTP request line: ''
+[2026-08-14 19:05:56 +0800] [1311448] [WARNING] Invalid request from ip=172.232.232.179: Invalid HTTP Version: 'RTSP/1.0'
+[2026-08-14 19:06:12 +0800] [1305410] [WARNING] Invalid request from ip=172.232.232.179: Invalid HTTP request line: 'HELP'
+[2026-08-14 19:06:18 +0800] [1311448] [WARNING] Invalid request from ip=172.232.232.179: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nmap'
+[2026-08-14 19:06:53 +0800] [1311448] [WARNING] Invalid request from ip=172.232.232.179: Invalid HTTP request line: 'OPTIONS sip:nm SIP/2.0'
+[2026-08-17 02:34:51 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1305410)
+[2026-08-17 02:34:51 +0800] [1305410] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-17 02:34:52 +0800] [1237943] [ERROR] Worker (pid:1305410) was sent SIGKILL! Perhaps out of memory?
+[2026-08-17 02:34:52 +0800] [1358882] [INFO] Booting worker with pid: 1358882
+[2026-08-17 02:34:52 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-18 21:55:30 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1358882)
+[2026-08-18 21:55:30 +0800] [1358882] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-18 21:55:30 +0800] [1358882] [INFO] Worker exiting (pid: 1358882)
+[2026-08-18 21:55:31 +0800] [1386782] [INFO] Booting worker with pid: 1386782
+[2026-08-18 21:55:31 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-19 13:50:09 +0800] [1311448] [WARNING] Invalid request from ip=80.66.83.43: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-08-19 15:39:33 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1305941)
+[2026-08-19 15:39:33 +0800] [1305941] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-19 15:39:34 +0800] [1237943] [ERROR] Worker (pid:1305941) was sent SIGKILL! Perhaps out of memory?
+[2026-08-19 15:39:34 +0800] [1401199] [INFO] Booting worker with pid: 1401199
+[2026-08-19 15:39:34 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-19 15:40:53 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1311448)
+[2026-08-19 15:40:53 +0800] [1311448] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-19 15:40:54 +0800] [1237943] [ERROR] Worker (pid:1311448) was sent SIGKILL! Perhaps out of memory?
+[2026-08-19 15:40:54 +0800] [1401206] [INFO] Booting worker with pid: 1401206
+[2026-08-19 15:40:54 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-19 15:41:53 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1401199)
+[2026-08-19 15:41:53 +0800] [1401199] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-19 15:41:54 +0800] [1237943] [ERROR] Worker (pid:1401199) was sent SIGKILL! Perhaps out of memory?
+[2026-08-19 15:41:54 +0800] [1401215] [INFO] Booting worker with pid: 1401215
+[2026-08-19 15:41:54 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-19 15:42:54 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1401206)
+[2026-08-19 15:42:54 +0800] [1401206] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-19 15:42:55 +0800] [1237943] [ERROR] Worker (pid:1401206) was sent SIGKILL! Perhaps out of memory?
+[2026-08-19 15:42:55 +0800] [1401225] [INFO] Booting worker with pid: 1401225
+[2026-08-19 15:42:55 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-19 15:43:54 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1401215)
+[2026-08-19 15:43:54 +0800] [1401215] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-19 15:43:55 +0800] [1237943] [ERROR] Worker (pid:1401215) was sent SIGKILL! Perhaps out of memory?
+[2026-08-19 15:43:55 +0800] [1401230] [INFO] Booting worker with pid: 1401230
+[2026-08-19 15:43:55 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-21 16:40:08 +0800] [1386782] [WARNING] Invalid request from ip=152.53.81.25: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-08-21 20:47:22 +0800] [1401230] [WARNING] Invalid request from ip=152.53.81.25: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-08-23 18:20:21 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1401225)
+[2026-08-23 18:20:21 +0800] [1401225] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-23 18:20:21 +0800] [1401225] [INFO] Worker exiting (pid: 1401225)
+[2026-08-23 18:20:22 +0800] [1523940] [INFO] Booting worker with pid: 1523940
+[2026-08-23 18:20:22 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-23 18:23:22 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1386782)
+[2026-08-23 18:23:22 +0800] [1386782] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-23 18:23:23 +0800] [1237943] [ERROR] Worker (pid:1386782) was sent SIGKILL! Perhaps out of memory?
+[2026-08-23 18:23:23 +0800] [1524055] [INFO] Booting worker with pid: 1524055
+[2026-08-23 18:23:23 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-23 18:24:22 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1401230)
+[2026-08-23 18:24:22 +0800] [1401230] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-23 18:24:23 +0800] [1237943] [ERROR] Worker (pid:1401230) was sent SIGKILL! Perhaps out of memory?
+[2026-08-23 18:24:23 +0800] [1524097] [INFO] Booting worker with pid: 1524097
+[2026-08-23 18:24:23 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-23 18:25:22 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1524055)
+[2026-08-23 18:25:22 +0800] [1524055] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-23 18:25:23 +0800] [1237943] [ERROR] Worker (pid:1524055) was sent SIGKILL! Perhaps out of memory?
+[2026-08-23 18:25:23 +0800] [1524135] [INFO] Booting worker with pid: 1524135
+[2026-08-23 18:25:23 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-25 08:26:48 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1523940)
+[2026-08-25 08:26:48 +0800] [1523940] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-25 08:26:48 +0800] [1523940] [INFO] Worker exiting (pid: 1523940)
+[2026-08-25 08:26:49 +0800] [1610687] [INFO] Booting worker with pid: 1610687
+[2026-08-25 08:26:49 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-25 08:27:48 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1524135)
+[2026-08-25 08:27:48 +0800] [1524135] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-25 08:27:48 +0800] [1524135] [INFO] Worker exiting (pid: 1524135)
+[2026-08-25 08:27:48 +0800] [1610732] [INFO] Booting worker with pid: 1610732
+[2026-08-25 08:27:48 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-25 08:28:47 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1610687)
+[2026-08-25 08:28:47 +0800] [1610687] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-25 08:28:48 +0800] [1610687] [INFO] Worker exiting (pid: 1610687)
+[2026-08-25 08:28:48 +0800] [1610769] [INFO] Booting worker with pid: 1610769
+[2026-08-25 08:28:48 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-25 08:29:47 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1610732)
+[2026-08-25 08:29:47 +0800] [1610732] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 184, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 272, in api_data
+    df, df_equity_src, stats, error = process_data()
+                                      ^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 255, in process_data
+    result_df = df_display[final_cols]
+                ~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/frame.py", line 4393, in __getitem__
+    data = self.take(indexer, axis=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/generic.py", line 4089, in take
+    new_data = self._mgr.take(
+               ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 1090, in take
+    return self.reindex_indexer(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 860, in reindex_indexer
+    new_blocks = list(
+                 ^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 1006, in _slice_take_blocks_ax0
+    if not blk._can_consolidate and not blk._validate_ndim:
+                                        ^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/properties.pyx", line 36, in pandas._libs.properties.CachedProperty.__get__
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 154, in _validate_ndim
+    @final
+    
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-25 08:29:47 +0800] [1610732] [INFO] Worker exiting (pid: 1610732)
+[2026-08-25 08:29:48 +0800] [1610809] [INFO] Booting worker with pid: 1610809
+[2026-08-25 08:29:48 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-25 08:30:48 +0800] [1237943] [CRITICAL] WORKER TIMEOUT (pid:1524097)
+[2026-08-25 08:30:48 +0800] [1524097] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-25 08:30:48 +0800] [1524097] [INFO] Worker exiting (pid: 1524097)
+[2026-08-25 08:30:49 +0800] [1610847] [INFO] Booting worker with pid: 1610847
+[2026-08-25 08:30:49 +0800] [1237943] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-25 09:46:27 +0800] [1610809] [WARNING] Invalid request from ip=172.234.231.96: Invalid HTTP request line: ''
+[2026-08-25 17:20:38 +0800] [1610769] [WARNING] Invalid request from ip=62.164.177.54: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-08-26 00:48:26 +0800] [1610847] [WARNING] Invalid request from ip=62.164.177.54: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-08-26 08:35:40 +0800] [1610847] [WARNING] Invalid request from ip=62.164.177.54: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-08-27 06:35:23 +0800] [1237943] [INFO] Handling signal: term
+[2026-08-27 06:35:23 +0800] [1610769] [INFO] Worker exiting (pid: 1610769)
+[2026-08-27 06:35:23 +0800] [1610809] [INFO] Worker exiting (pid: 1610809)
+[2026-08-27 06:35:23 +0800] [1610847] [INFO] Worker exiting (pid: 1610847)
+[2026-08-27 06:35:23 +0800] [1237943] [INFO] Worker (pid:1610769) was sent SIGTERM!
+[2026-08-27 06:35:23 +0800] [1237943] [INFO] Worker (pid:1610809) was sent SIGTERM!
+[2026-08-27 06:35:23 +0800] [1237943] [INFO] Worker (pid:1610847) was sent SIGTERM!
+[2026-08-27 06:35:24 +0800] [1237943] [INFO] Shutting down: Master
+[2026-08-27 06:35:24 +0800] [1698151] [INFO] Starting gunicorn 26.0.0
+[2026-08-27 06:35:24 +0800] [1698151] [INFO] Listening at: http://0.0.0.0:8002 (1698151)
+[2026-08-27 06:35:24 +0800] [1698151] [INFO] Using worker: sync
+[2026-08-27 06:35:24 +0800] [1698182] [INFO] Booting worker with pid: 1698182
+[2026-08-27 06:35:24 +0800] [1698184] [INFO] Booting worker with pid: 1698184
+[2026-08-27 06:35:24 +0800] [1698186] [INFO] Booting worker with pid: 1698186
+[2026-08-27 06:35:25 +0800] [1698151] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-28 00:25:16 +0800] [1698151] [CRITICAL] WORKER TIMEOUT (pid:1698186)
+[2026-08-28 00:25:16 +0800] [1698186] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-28 00:25:16 +0800] [1698186] [INFO] Worker exiting (pid: 1698186)
+[2026-08-28 00:25:17 +0800] [1707448] [INFO] Booting worker with pid: 1707448
+[2026-08-28 00:25:17 +0800] [1698151] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-28 07:28:31 +0800] [1698151] [CRITICAL] WORKER TIMEOUT (pid:1698182)
+[2026-08-28 07:28:31 +0800] [1698182] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-28 07:28:32 +0800] [1698151] [ERROR] Worker (pid:1698182) was sent SIGKILL! Perhaps out of memory?
+[2026-08-28 07:28:32 +0800] [1711848] [INFO] Booting worker with pid: 1711848
+[2026-08-28 07:28:32 +0800] [1698151] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-29 21:28:14 +0800] [1698151] [CRITICAL] WORKER TIMEOUT (pid:1707448)
+[2026-08-29 21:28:14 +0800] [1707448] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-29 21:28:15 +0800] [1698151] [ERROR] Worker (pid:1707448) was sent SIGKILL! Perhaps out of memory?
+[2026-08-29 21:28:15 +0800] [1735380] [INFO] Booting worker with pid: 1735380
+[2026-08-29 21:28:15 +0800] [1698151] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-08-29 21:29:06 +0800] [1698151] [CRITICAL] WORKER TIMEOUT (pid:1711848)
+[2026-08-29 21:29:06 +0800] [1711848] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-08-29 21:29:06 +0800] [1711848] [INFO] Worker exiting (pid: 1711848)
+[2026-08-29 21:29:06 +0800] [1735391] [INFO] Booting worker with pid: 1735391
+[2026-08-29 21:29:06 +0800] [1698151] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-01 06:22:11 +0800] [1735391] [INFO] Worker exiting (pid: 1735391)
+[2026-09-01 06:22:11 +0800] [1735380] [INFO] Worker exiting (pid: 1735380)
+[2026-09-01 06:22:11 +0800] [1698184] [INFO] Worker exiting (pid: 1698184)
+[2026-09-01 06:22:11 +0800] [1698151] [INFO] Handling signal: term
+[2026-09-01 06:22:11 +0800] [1698151] [INFO] Worker (pid:1698184) was sent SIGTERM!
+[2026-09-01 06:22:11 +0800] [1698151] [INFO] Worker (pid:1735380) was sent SIGTERM!
+[2026-09-01 06:22:11 +0800] [1698151] [INFO] Worker (pid:1735391) was sent SIGTERM!
+[2026-09-01 06:22:11 +0800] [1698151] [INFO] Shutting down: Master
+[2026-09-01 06:22:11 +0800] [1768641] [INFO] Starting gunicorn 26.0.0
+[2026-09-01 06:22:11 +0800] [1768641] [INFO] Listening at: http://0.0.0.0:8002 (1768641)
+[2026-09-01 06:22:11 +0800] [1768641] [INFO] Using worker: sync
+[2026-09-01 06:22:11 +0800] [1768673] [INFO] Booting worker with pid: 1768673
+[2026-09-01 06:22:11 +0800] [1768674] [INFO] Booting worker with pid: 1768674
+[2026-09-01 06:22:11 +0800] [1768676] [INFO] Booting worker with pid: 1768676
+[2026-09-01 06:22:12 +0800] [1768641] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-01 06:22:35 +0800] [1768641] [INFO] Handling signal: term
+[2026-09-01 06:22:35 +0800] [1768676] [INFO] Worker exiting (pid: 1768676)
+[2026-09-01 06:22:35 +0800] [1768674] [INFO] Worker exiting (pid: 1768674)
+[2026-09-01 06:22:35 +0800] [1768673] [INFO] Worker exiting (pid: 1768673)
+[2026-09-01 06:22:35 +0800] [1768641] [INFO] Worker (pid:1768676) was sent SIGTERM!
+[2026-09-01 06:22:35 +0800] [1768641] [INFO] Shutting down: Master
+[2026-09-01 06:22:36 +0800] [1769217] [INFO] Starting gunicorn 26.0.0
+[2026-09-01 06:22:36 +0800] [1769217] [INFO] Listening at: http://0.0.0.0:8002 (1769217)
+[2026-09-01 06:22:36 +0800] [1769217] [INFO] Using worker: sync
+[2026-09-01 06:22:36 +0800] [1769247] [INFO] Booting worker with pid: 1769247
+[2026-09-01 06:22:36 +0800] [1769251] [INFO] Booting worker with pid: 1769251
+[2026-09-01 06:22:36 +0800] [1769252] [INFO] Booting worker with pid: 1769252
+[2026-09-01 06:22:36 +0800] [1769217] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-02 20:38:25 +0800] [1769217] [CRITICAL] WORKER TIMEOUT (pid:1769251)
+[2026-09-02 20:38:25 +0800] [1769251] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-02 20:38:25 +0800] [1769251] [INFO] Worker exiting (pid: 1769251)
+[2026-09-02 20:38:25 +0800] [1808681] [INFO] Booting worker with pid: 1808681
+[2026-09-02 20:38:25 +0800] [1769217] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-04 09:30:51 +0800] [1769217] [CRITICAL] WORKER TIMEOUT (pid:1769247)
+[2026-09-04 09:30:51 +0800] [1769247] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-04 09:30:52 +0800] [1769217] [ERROR] Worker (pid:1769247) was sent SIGKILL! Perhaps out of memory?
+[2026-09-04 09:30:52 +0800] [1769217] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-04 09:30:52 +0800] [1822032] [INFO] Booting worker with pid: 1822032
+[2026-09-04 09:41:01 +0800] [1769252] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-04 11:05:51 +0800] [1769217] [CRITICAL] WORKER TIMEOUT (pid:1808681)
+[2026-09-04 11:05:51 +0800] [1808681] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-04 11:05:52 +0800] [1769217] [ERROR] Worker (pid:1808681) was sent SIGKILL! Perhaps out of memory?
+[2026-09-04 11:05:52 +0800] [1822328] [INFO] Booting worker with pid: 1822328
+[2026-09-04 11:05:52 +0800] [1769217] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-04 12:20:50 +0800] [1769217] [CRITICAL] WORKER TIMEOUT (pid:1822328)
+[2026-09-04 12:20:50 +0800] [1822328] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-04 12:20:51 +0800] [1769217] [ERROR] Worker (pid:1822328) was sent SIGKILL! Perhaps out of memory?
+[2026-09-04 12:20:51 +0800] [1822636] [INFO] Booting worker with pid: 1822636
+[2026-09-04 12:20:51 +0800] [1769217] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-04 12:53:50 +0800] [1769217] [CRITICAL] WORKER TIMEOUT (pid:1769252)
+[2026-09-04 12:53:50 +0800] [1769252] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-04 12:53:50 +0800] [1769252] [INFO] Worker exiting (pid: 1769252)
+[2026-09-04 12:53:51 +0800] [1822686] [INFO] Booting worker with pid: 1822686
+[2026-09-04 12:53:51 +0800] [1769217] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-04 19:08:26 +0800] [1822636] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-05 03:06:29 +0800] [1822032] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-05 07:44:17 +0800] [1822686] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-05 20:02:18 +0800] [1822032] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-06 01:08:57 +0800] [1822686] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-06 07:53:58 +0800] [1822686] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-06 18:50:18 +0800] [1822686] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-07 01:17:22 +0800] [1822686] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-07 06:33:53 +0800] [1822636] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-07 10:42:19 +0800] [1822636] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-08 10:14:24 +0800] [1769217] [CRITICAL] WORKER TIMEOUT (pid:1822032)
+[2026-09-08 10:14:24 +0800] [1822032] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-08 10:14:25 +0800] [1822032] [INFO] Worker exiting (pid: 1822032)
+[2026-09-08 10:14:25 +0800] [1769217] [ERROR] Worker (pid:1822032) was sent SIGKILL! Perhaps out of memory?
+[2026-09-08 10:14:25 +0800] [2022836] [INFO] Booting worker with pid: 2022836
+[2026-09-08 10:14:25 +0800] [1769217] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-08 14:52:41 +0800] [1822636] [WARNING] Invalid request from ip=80.94.95.83: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-09 06:34:32 +0800] [1822636] [WARNING] Invalid request from ip=47.76.120.0: Invalid HTTP request line: ''
+[2026-09-12 06:15:19 +0800] [1822686] [INFO] Worker exiting (pid: 1822686)
+[2026-09-12 06:15:19 +0800] [2022836] [INFO] Worker exiting (pid: 2022836)
+[2026-09-12 06:15:19 +0800] [1769217] [INFO] Handling signal: term
+[2026-09-12 06:15:19 +0800] [1822636] [INFO] Worker exiting (pid: 1822636)
+[2026-09-12 06:15:19 +0800] [1769217] [INFO] Worker (pid:1822636) was sent SIGTERM!
+[2026-09-12 06:15:19 +0800] [1769217] [INFO] Worker (pid:1822686) was sent SIGTERM!
+[2026-09-12 06:15:19 +0800] [1769217] [INFO] Worker (pid:2022836) was sent SIGTERM!
+[2026-09-12 06:15:19 +0800] [1769217] [INFO] Shutting down: Master
+[2026-09-12 06:15:19 +0800] [2103066] [INFO] Starting gunicorn 26.0.0
+[2026-09-12 06:15:19 +0800] [2103066] [INFO] Listening at: http://0.0.0.0:8002 (2103066)
+[2026-09-12 06:15:19 +0800] [2103066] [INFO] Using worker: sync
+[2026-09-12 06:15:19 +0800] [2103105] [INFO] Booting worker with pid: 2103105
+[2026-09-12 06:15:20 +0800] [2103106] [INFO] Booting worker with pid: 2103106
+[2026-09-12 06:15:20 +0800] [2103107] [INFO] Booting worker with pid: 2103107
+[2026-09-12 06:15:20 +0800] [2103066] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-12 06:15:47 +0800] [2103105] [INFO] Worker exiting (pid: 2103105)
+[2026-09-12 06:15:47 +0800] [2103106] [INFO] Worker exiting (pid: 2103106)
+[2026-09-12 06:15:47 +0800] [2103107] [INFO] Worker exiting (pid: 2103107)
+[2026-09-12 06:15:47 +0800] [2103066] [INFO] Handling signal: term
+[2026-09-12 06:15:47 +0800] [2103066] [INFO] Worker (pid:2103105) was sent SIGTERM!
+[2026-09-12 06:15:47 +0800] [2103066] [INFO] Worker (pid:2103106) was sent SIGTERM!
+[2026-09-12 06:15:47 +0800] [2103066] [INFO] Worker (pid:2103107) was sent SIGTERM!
+[2026-09-12 06:15:47 +0800] [2103066] [INFO] Shutting down: Master
+[2026-09-12 06:15:48 +0800] [2104267] [INFO] Starting gunicorn 26.0.0
+[2026-09-12 06:15:48 +0800] [2104267] [INFO] Listening at: http://0.0.0.0:8002 (2104267)
+[2026-09-12 06:15:48 +0800] [2104267] [INFO] Using worker: sync
+[2026-09-12 06:15:48 +0800] [2104293] [INFO] Booting worker with pid: 2104293
+[2026-09-12 06:15:49 +0800] [2104295] [INFO] Booting worker with pid: 2104295
+[2026-09-12 06:15:49 +0800] [2104299] [INFO] Booting worker with pid: 2104299
+[2026-09-12 06:15:49 +0800] [2104267] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-12 14:27:52 +0800] [2104267] [CRITICAL] WORKER TIMEOUT (pid:2104293)
+[2026-09-12 14:27:52 +0800] [2104293] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-12 14:27:52 +0800] [2104293] [INFO] Worker exiting (pid: 2104293)
+[2026-09-12 14:27:53 +0800] [2114844] [INFO] Booting worker with pid: 2114844
+[2026-09-12 14:27:53 +0800] [2104267] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-13 05:17:50 +0800] [2104267] [CRITICAL] WORKER TIMEOUT (pid:2114844)
+[2026-09-13 05:17:50 +0800] [2114844] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 184, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 272, in api_data
+    df, df_equity_src, stats, error = process_data()
+                                      ^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 232, in process_data
+    "btc_30m": calc_single_rate(df_full, "BTC", "backtest_30m"),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/dashboard_final.py", line 30, in calc_single_rate
+    target_df = df[df['symbol'].str.contains(symbol, case=False, na=False)]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/accessor.py", line 142, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/accessor.py", line 1496, in contains
+    result = self._data.array._str_contains(pat, case, flags, na, regex)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/object_array.py", line 160, in _str_contains
+    return self._str_map(f, na, dtype=np.dtype("bool"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/arrays/string_.py", line 472, in _str_map
+    return self._str_map_nan_semantics(f, na_value=na_value, dtype=dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/arrays/string_.py", line 581, in _str_map_nan_semantics
+    result = lib.map_infer_mask(
+             ^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/lib.pyx", line 3023, in pandas._libs.lib.map_infer_mask
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/pandas/core/strings/object_array.py", line 154, in <lambda>
+    f = lambda x: pat.search(x) is not None
+                  ^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-13 05:17:50 +0800] [2114844] [INFO] Worker exiting (pid: 2114844)
+[2026-09-13 05:17:51 +0800] [2134289] [INFO] Booting worker with pid: 2134289
+[2026-09-13 05:17:51 +0800] [2104267] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-13 14:49:03 +0800] [2104295] [WARNING] Invalid request from ip=130.12.180.101: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-13 17:41:04 +0800] [2104295] [WARNING] Invalid request from ip=123.178.210.200: Invalid HTTP request line: 'USER anonymous'
+[2026-09-13 18:58:09 +0800] [2104295] [WARNING] Invalid request from ip=130.12.180.101: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-13 20:51:10 +0800] [2104267] [CRITICAL] WORKER TIMEOUT (pid:2134289)
+[2026-09-13 20:51:10 +0800] [2134289] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-13 20:51:10 +0800] [2134289] [INFO] Worker exiting (pid: 2134289)
+[2026-09-13 20:51:11 +0800] [2104267] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-13 20:51:11 +0800] [2149096] [INFO] Booting worker with pid: 2149096
+[2026-09-18 02:36:00 +0800] [2104299] [WARNING] Invalid request from ip=45.79.207.110: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-09-21 12:10:59 +0800] [2104267] [CRITICAL] WORKER TIMEOUT (pid:2104295)
+[2026-09-21 12:10:59 +0800] [2104295] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-21 12:10:59 +0800] [2104295] [INFO] Worker exiting (pid: 2104295)
+[2026-09-21 12:11:00 +0800] [2104267] [ERROR] Worker (pid:2104295) was sent SIGKILL! Perhaps out of memory?
+[2026-09-21 12:11:00 +0800] [2297917] [INFO] Booting worker with pid: 2297917
+[2026-09-21 12:11:00 +0800] [2104267] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-22 06:56:36 +0800] [2104267] [INFO] Handling signal: term
+[2026-09-22 06:56:36 +0800] [2149096] [INFO] Worker exiting (pid: 2149096)
+[2026-09-22 06:56:36 +0800] [2297917] [INFO] Worker exiting (pid: 2297917)
+[2026-09-22 06:56:36 +0800] [2104299] [INFO] Worker exiting (pid: 2104299)
+[2026-09-22 06:56:36 +0800] [2104267] [INFO] Worker (pid:2149096) was sent SIGTERM!
+[2026-09-22 06:56:36 +0800] [2104267] [INFO] Worker (pid:2297917) was sent SIGTERM!
+[2026-09-22 06:56:39 +0800] [2104267] [INFO] Shutting down: Master
+[2026-09-22 06:56:39 +0800] [2308747] [INFO] Starting gunicorn 26.0.0
+[2026-09-22 06:56:39 +0800] [2308747] [INFO] Listening at: http://0.0.0.0:8002 (2308747)
+[2026-09-22 06:56:39 +0800] [2308747] [INFO] Using worker: sync
+[2026-09-22 06:56:39 +0800] [2308786] [INFO] Booting worker with pid: 2308786
+[2026-09-22 06:56:40 +0800] [2308791] [INFO] Booting worker with pid: 2308791
+[2026-09-22 06:56:40 +0800] [2308787] [INFO] Booting worker with pid: 2308787
+[2026-09-22 06:56:40 +0800] [2308747] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-24 17:49:43 +0800] [2308791] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-24 21:25:49 +0800] [2308787] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-09-26 06:46:45 +0800] [2308786] [INFO] Worker exiting (pid: 2308786)
+[2026-09-26 06:46:45 +0800] [2308791] [INFO] Worker exiting (pid: 2308791)
+[2026-09-26 06:46:45 +0800] [2308787] [INFO] Worker exiting (pid: 2308787)
+[2026-09-26 06:46:45 +0800] [2308747] [INFO] Handling signal: term
+[2026-09-26 06:46:46 +0800] [2308747] [INFO] Worker (pid:2308786) was sent SIGTERM!
+[2026-09-26 06:46:46 +0800] [2308747] [INFO] Worker (pid:2308787) was sent SIGTERM!
+[2026-09-26 06:46:46 +0800] [2308747] [INFO] Worker (pid:2308791) was sent SIGTERM!
+[2026-09-26 06:46:46 +0800] [2308747] [INFO] Shutting down: Master
+[2026-09-26 06:46:47 +0800] [2421640] [INFO] Starting gunicorn 26.0.0
+[2026-09-26 06:46:47 +0800] [2421640] [INFO] Listening at: http://0.0.0.0:8002 (2421640)
+[2026-09-26 06:46:47 +0800] [2421640] [INFO] Using worker: sync
+[2026-09-26 06:46:47 +0800] [2421680] [INFO] Booting worker with pid: 2421680
+[2026-09-26 06:46:47 +0800] [2421681] [INFO] Booting worker with pid: 2421681
+[2026-09-26 06:46:47 +0800] [2421682] [INFO] Booting worker with pid: 2421682
+[2026-09-26 06:46:48 +0800] [2421640] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-09-26 19:56:37 +0800] [2421640] [CRITICAL] WORKER TIMEOUT (pid:2421681)
+[2026-09-26 19:56:37 +0800] [2421681] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-09-26 19:56:37 +0800] [2421681] [INFO] Worker exiting (pid: 2421681)
+[2026-09-26 19:56:38 +0800] [2425984] [INFO] Booting worker with pid: 2425984
+[2026-09-26 19:56:38 +0800] [2421640] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-01 06:56:40 +0800] [2425984] [INFO] Worker exiting (pid: 2425984)
+[2026-10-01 06:56:40 +0800] [2421640] [INFO] Handling signal: term
+[2026-10-01 06:56:40 +0800] [2421682] [INFO] Worker exiting (pid: 2421682)
+[2026-10-01 06:56:40 +0800] [2421680] [INFO] Worker exiting (pid: 2421680)
+[2026-10-01 06:56:41 +0800] [2421640] [INFO] Worker (pid:2421680) was sent SIGTERM!
+[2026-10-01 06:56:41 +0800] [2421640] [INFO] Worker (pid:2421682) was sent SIGTERM!
+[2026-10-01 06:56:41 +0800] [2421640] [INFO] Worker (pid:2425984) was sent SIGTERM!
+[2026-10-01 06:56:41 +0800] [2421640] [INFO] Shutting down: Master
+[2026-10-01 06:56:42 +0800] [2508179] [INFO] Starting gunicorn 26.0.0
+[2026-10-01 06:56:42 +0800] [2508179] [INFO] Listening at: http://0.0.0.0:8002 (2508179)
+[2026-10-01 06:56:42 +0800] [2508179] [INFO] Using worker: sync
+[2026-10-01 06:56:42 +0800] [2508220] [INFO] Booting worker with pid: 2508220
+[2026-10-01 06:56:42 +0800] [2508222] [INFO] Booting worker with pid: 2508222
+[2026-10-01 06:56:42 +0800] [2508227] [INFO] Booting worker with pid: 2508227
+[2026-10-01 06:56:42 +0800] [2508179] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-01 22:28:44 +0800] [2508179] [CRITICAL] WORKER TIMEOUT (pid:2508227)
+[2026-10-01 22:28:44 +0800] [2508227] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-01 22:28:45 +0800] [2508179] [ERROR] Worker (pid:2508227) was sent SIGKILL! Perhaps out of memory?
+[2026-10-01 22:28:46 +0800] [2514956] [INFO] Booting worker with pid: 2514956
+[2026-10-01 22:28:46 +0800] [2508179] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-01 22:28:55 +0800] [2508179] [CRITICAL] WORKER TIMEOUT (pid:2508222)
+[2026-10-01 22:28:55 +0800] [2508222] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-01 22:28:56 +0800] [2508179] [ERROR] Worker (pid:2508222) was sent SIGKILL! Perhaps out of memory?
+[2026-10-01 22:28:56 +0800] [2514959] [INFO] Booting worker with pid: 2514959
+[2026-10-01 22:28:56 +0800] [2508179] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-02 02:39:23 +0800] [2514956] [WARNING] Invalid request from ip=45.79.207.110: Invalid HTTP request line: '*1'
+[2026-10-04 02:37:33 +0800] [2508179] [CRITICAL] WORKER TIMEOUT (pid:2514956)
+[2026-10-04 02:37:33 +0800] [2514956] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-04 02:37:34 +0800] [2508179] [ERROR] Worker (pid:2514956) was sent SIGKILL! Perhaps out of memory?
+[2026-10-04 02:37:34 +0800] [2562417] [INFO] Booting worker with pid: 2562417
+[2026-10-04 02:37:34 +0800] [2508179] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-04 02:38:13 +0800] [2562417] [WARNING] Invalid request from ip=45.79.8.221: Invalid HTTP request line: 'stats'
+[2026-10-04 18:00:49 +0800] [2508220] [WARNING] Invalid request from ip=138.197.191.87: Invalid HTTP request line: 'LEAKIX'
+[2026-10-05 14:09:05 +0800] [2514959] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-05 17:24:25 +0800] [2562417] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-05 20:29:25 +0800] [2508179] [CRITICAL] WORKER TIMEOUT (pid:2508220)
+[2026-10-05 20:29:25 +0800] [2508220] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-05 20:29:26 +0800] [2508179] [ERROR] Worker (pid:2508220) was sent SIGKILL! Perhaps out of memory?
+[2026-10-05 20:29:26 +0800] [2596608] [INFO] Booting worker with pid: 2596608
+[2026-10-05 20:29:26 +0800] [2508179] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-06 03:36:47 +0800] [2596608] [WARNING] Invalid request from ip=50.116.26.161: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-10-08 01:36:32 +0800] [2514959] [WARNING] Invalid request from ip=45.79.207.181: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-10-08 03:36:40 +0800] [2562417] [WARNING] Invalid request from ip=45.33.12.214: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-10-09 07:18:25 +0800] [2596608] [WARNING] Invalid request from ip=139.162.119.146: Invalid HTTP request line: ''
+[2026-10-09 07:18:39 +0800] [2596608] [WARNING] Invalid request from ip=139.162.119.146: Invalid HTTP Version: 'RTSP/1.0'
+[2026-10-09 07:18:55 +0800] [2562417] [WARNING] Invalid request from ip=139.162.119.146: Invalid HTTP request line: 'HELP'
+[2026-10-09 07:19:00 +0800] [2562417] [WARNING] Invalid request from ip=139.162.119.146: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nmap'
+[2026-10-09 07:19:35 +0800] [2596608] [WARNING] Invalid request from ip=139.162.119.146: Invalid HTTP request line: 'OPTIONS sip:nm SIP/2.0'
+[2026-10-10 01:36:32 +0800] [2514959] [WARNING] Invalid request from ip=45.33.14.197: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-10-10 02:36:36 +0800] [2562417] [WARNING] Invalid request from ip=66.228.62.150: Invalid HTTP request line: '\x00\x00\x00\x08\x04Ò\x16/PING'
+[2026-10-10 02:37:19 +0800] [2508179] [CRITICAL] WORKER TIMEOUT (pid:2596608)
+[2026-10-10 02:37:19 +0800] [2596608] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-10 02:37:20 +0800] [2508179] [ERROR] Worker (pid:2596608) was sent SIGKILL! Perhaps out of memory?
+[2026-10-10 02:37:20 +0800] [2683663] [INFO] Booting worker with pid: 2683663
+[2026-10-10 02:37:20 +0800] [2508179] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-12 11:23:18 +0800] [2508179] [CRITICAL] WORKER TIMEOUT (pid:2683663)
+[2026-10-12 11:23:18 +0800] [2683663] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-12 11:23:18 +0800] [2683663] [INFO] Worker exiting (pid: 2683663)
+[2026-10-12 11:23:19 +0800] [2719763] [INFO] Booting worker with pid: 2719763
+[2026-10-12 11:23:19 +0800] [2508179] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-13 10:50:30 +0800] [749] [INFO] Starting gunicorn 26.0.0
+[2026-10-13 10:50:30 +0800] [749] [INFO] Listening at: http://0.0.0.0:8002 (749)
+[2026-10-13 10:50:30 +0800] [749] [INFO] Using worker: sync
+[2026-10-13 10:50:30 +0800] [944] [INFO] Booting worker with pid: 944
+[2026-10-13 10:50:30 +0800] [945] [INFO] Booting worker with pid: 945
+[2026-10-13 10:50:30 +0800] [953] [INFO] Booting worker with pid: 953
+[2026-10-13 10:50:31 +0800] [749] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-14 01:36:00 +0800] [945] [WARNING] Invalid request from ip=45.79.207.181: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-10-14 03:37:25 +0800] [944] [WARNING] Invalid request from ip=45.79.5.11: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-10-14 03:37:41 +0800] [945] [WARNING] Invalid request from ip=45.79.5.11: Invalid HTTP request line: '*1'
+[2026-10-14 17:28:08 +0800] [944] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-14 20:24:00 +0800] [953] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-18 09:02:03 +0800] [953] [WARNING] Invalid request from ip=80.94.95.140: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-21 06:56:19 +0800] [945] [INFO] Worker exiting (pid: 945)
+[2026-10-21 06:56:19 +0800] [944] [INFO] Worker exiting (pid: 944)
+[2026-10-21 06:56:19 +0800] [953] [INFO] Worker exiting (pid: 953)
+[2026-10-21 06:56:19 +0800] [749] [INFO] Handling signal: term
+[2026-10-21 06:56:19 +0800] [749] [INFO] Worker (pid:944) was sent SIGTERM!
+[2026-10-21 06:56:19 +0800] [749] [INFO] Worker (pid:945) was sent SIGTERM!
+[2026-10-21 06:56:19 +0800] [749] [INFO] Worker (pid:953) was sent SIGTERM!
+[2026-10-21 06:56:19 +0800] [749] [INFO] Shutting down: Master
+[2026-10-21 06:56:20 +0800] [163931] [INFO] Starting gunicorn 26.0.0
+[2026-10-21 06:56:20 +0800] [163931] [INFO] Listening at: http://0.0.0.0:8002 (163931)
+[2026-10-21 06:56:20 +0800] [163931] [INFO] Using worker: sync
+[2026-10-21 06:56:20 +0800] [163958] [INFO] Booting worker with pid: 163958
+[2026-10-21 06:56:20 +0800] [163959] [INFO] Booting worker with pid: 163959
+[2026-10-21 06:56:20 +0800] [163960] [INFO] Booting worker with pid: 163960
+[2026-10-21 06:56:21 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 22:30:24 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:163959)
+[2026-10-22 22:30:24 +0800] [163959] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-22 22:30:25 +0800] [163931] [ERROR] Worker (pid:163959) was sent SIGKILL! Perhaps out of memory?
+[2026-10-22 22:30:26 +0800] [211263] [INFO] Booting worker with pid: 211263
+[2026-10-22 22:30:26 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 22:52:25 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:163958)
+[2026-10-22 22:52:25 +0800] [163958] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-22 22:52:26 +0800] [163931] [ERROR] Worker (pid:163958) was sent SIGKILL! Perhaps out of memory?
+[2026-10-22 22:52:27 +0800] [211286] [INFO] Booting worker with pid: 211286
+[2026-10-22 22:52:27 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 22:55:29 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:211286)
+[2026-10-22 22:55:29 +0800] [211286] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-22 22:55:30 +0800] [163931] [ERROR] Worker (pid:211286) was sent SIGKILL! Perhaps out of memory?
+[2026-10-22 22:55:30 +0800] [211293] [INFO] Booting worker with pid: 211293
+[2026-10-22 22:55:30 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 22:56:30 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:163960)
+[2026-10-22 22:56:30 +0800] [163960] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-22 22:56:31 +0800] [163931] [ERROR] Worker (pid:163960) was sent SIGKILL! Perhaps out of memory?
+[2026-10-22 22:56:31 +0800] [211296] [INFO] Booting worker with pid: 211296
+[2026-10-22 22:56:31 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 23:15:25 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:211263)
+[2026-10-22 23:15:25 +0800] [211263] [INFO] Worker exiting (pid: 211263)
+[2026-10-22 23:15:25 +0800] [163931] [ERROR] Worker (pid:211263) exited with code 1.
+[2026-10-22 23:15:25 +0800] [211321] [INFO] Booting worker with pid: 211321
+[2026-10-22 23:15:25 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 23:16:25 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:211296)
+[2026-10-22 23:16:25 +0800] [211296] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-22 23:16:26 +0800] [163931] [ERROR] Worker (pid:211296) was sent SIGKILL! Perhaps out of memory?
+[2026-10-22 23:16:26 +0800] [211324] [INFO] Booting worker with pid: 211324
+[2026-10-22 23:16:26 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 23:17:25 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:211293)
+[2026-10-22 23:17:25 +0800] [211293] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-22 23:17:26 +0800] [163931] [ERROR] Worker (pid:211293) was sent SIGKILL! Perhaps out of memory?
+[2026-10-22 23:17:26 +0800] [211330] [INFO] Booting worker with pid: 211330
+[2026-10-22 23:17:26 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-22 23:18:24 +0800] [163931] [CRITICAL] WORKER TIMEOUT (pid:211324)
+[2026-10-22 23:18:24 +0800] [211324] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-22 23:18:26 +0800] [163931] [ERROR] Worker (pid:211324) was sent SIGKILL! Perhaps out of memory?
+[2026-10-22 23:18:26 +0800] [211333] [INFO] Booting worker with pid: 211333
+[2026-10-22 23:18:26 +0800] [163931] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-23 06:48:34 +0800] [163931] [INFO] Handling signal: term
+[2026-10-23 06:48:34 +0800] [211333] [INFO] Worker exiting (pid: 211333)
+[2026-10-23 06:48:34 +0800] [211321] [INFO] Worker exiting (pid: 211321)
+[2026-10-23 06:48:34 +0800] [211330] [INFO] Worker exiting (pid: 211330)
+[2026-10-23 06:48:34 +0800] [163931] [INFO] Worker (pid:211330) was sent SIGTERM!
+[2026-10-23 06:48:34 +0800] [163931] [INFO] Worker (pid:211321) was sent SIGTERM!
+[2026-10-23 06:48:34 +0800] [163931] [INFO] Worker (pid:211333) was sent SIGTERM!
+[2026-10-23 06:48:34 +0800] [163931] [INFO] Shutting down: Master
+[2026-10-23 06:48:35 +0800] [215603] [INFO] Starting gunicorn 26.0.0
+[2026-10-23 06:48:35 +0800] [215603] [INFO] Listening at: http://0.0.0.0:8002 (215603)
+[2026-10-23 06:48:35 +0800] [215603] [INFO] Using worker: sync
+[2026-10-23 06:48:35 +0800] [215630] [INFO] Booting worker with pid: 215630
+[2026-10-23 06:48:35 +0800] [215631] [INFO] Booting worker with pid: 215631
+[2026-10-23 06:48:35 +0800] [215632] [INFO] Booting worker with pid: 215632
+[2026-10-23 06:48:36 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-24 01:52:10 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:215632)
+[2026-10-24 01:52:10 +0800] [215632] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-24 01:52:10 +0800] [215632] [INFO] Worker exiting (pid: 215632)
+[2026-10-24 01:52:11 +0800] [240463] [INFO] Booting worker with pid: 240463
+[2026-10-24 01:52:11 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-24 03:36:54 +0800] [215630] [WARNING] Invalid request from ip=66.228.62.150: Invalid HTTP request line: '\x03\x00\x00&!à\x00\x00þÊ\x00Cookie: mstshash='
+[2026-10-24 10:42:58 +0800] [240463] [WARNING] Invalid request from ip=47.245.93.95: Invalid HTTP request line: ''
+[2026-10-25 17:15:36 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:215631)
+[2026-10-25 17:15:36 +0800] [215631] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 471, in parse
+    self.read_into(unreader, buf, stop=True)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-25 17:15:37 +0800] [215603] [ERROR] Worker (pid:215631) was sent SIGKILL! Perhaps out of memory?
+[2026-10-25 17:15:37 +0800] [260575] [INFO] Booting worker with pid: 260575
+[2026-10-25 17:15:37 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-25 19:38:40 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:240463)
+[2026-10-25 19:38:40 +0800] [240463] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-25 19:38:41 +0800] [215603] [ERROR] Worker (pid:240463) was sent SIGKILL! Perhaps out of memory?
+[2026-10-25 19:38:41 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-25 19:38:41 +0800] [261769] [INFO] Booting worker with pid: 261769
+[2026-10-25 19:39:43 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:215630)
+[2026-10-25 19:39:43 +0800] [215630] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-25 19:39:44 +0800] [215603] [ERROR] Worker (pid:215630) was sent SIGKILL! Perhaps out of memory?
+[2026-10-25 19:39:44 +0800] [261774] [INFO] Booting worker with pid: 261774
+[2026-10-25 19:39:44 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-25 19:40:53 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:261774)
+[2026-10-25 19:40:53 +0800] [261774] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-25 19:40:54 +0800] [215603] [ERROR] Worker (pid:261774) was sent SIGKILL! Perhaps out of memory?
+[2026-10-25 19:40:54 +0800] [261779] [INFO] Booting worker with pid: 261779
+[2026-10-25 19:40:54 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-25 19:44:22 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:261779)
+[2026-10-25 19:44:22 +0800] [261779] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=separate&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-25 19:44:22 +0800] [261779] [INFO] Worker exiting (pid: 261779)
+[2026-10-25 19:44:22 +0800] [261791] [INFO] Booting worker with pid: 261791
+[2026-10-25 19:44:22 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-25 19:44:30 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:260575)
+[2026-10-25 19:44:30 +0800] [260575] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=combined&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-25 19:44:32 +0800] [215603] [ERROR] Worker (pid:260575) was sent SIGKILL! Perhaps out of memory?
+[2026-10-25 19:44:32 +0800] [261794] [INFO] Booting worker with pid: 261794
+[2026-10-25 19:44:32 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-25 19:46:57 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:261769)
+[2026-10-25 19:46:57 +0800] [261769] [ERROR] Error handling request GET /api/data?symbols=BTC%2CETH&period=10m&mode=combined&init_bal=1000&bet_amt=10&payout_rt=0.95
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 141, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 190, in handle_request
+    resp.write(item)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/wsgi.py", line 442, in write
+    util.write(self.sock, arg, self.chunked)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/util.py", line 339, in write
+    sock.sendall(data)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-25 19:46:58 +0800] [215603] [ERROR] Worker (pid:261769) was sent SIGKILL! Perhaps out of memory?
+[2026-10-25 19:46:58 +0800] [261809] [INFO] Booting worker with pid: 261809
+[2026-10-25 19:46:58 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-26 10:54:42 +0800] [261794] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-26 13:18:25 +0800] [261809] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-26 15:50:00 +0800] [261794] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-27 07:04:39 +0800] [261794] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-27 11:15:11 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:261791)
+[2026-10-27 11:15:11 +0800] [261791] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-27 11:15:12 +0800] [261791] [INFO] Worker exiting (pid: 261791)
+[2026-10-27 11:15:12 +0800] [289638] [INFO] Booting worker with pid: 289638
+[2026-10-27 11:15:12 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-27 11:29:40 +0800] [261809] [WARNING] Invalid request from ip=95.214.53.210: Invalid HTTP request line: '\x03\x00\x001,à\x00\x00\x00\x00\x00Cookie: mstshash=nla-scanner'
+[2026-10-28 05:23:07 +0800] [289638] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-28 15:17:05 +0800] [261794] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-28 16:06:29 +0800] [261809] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-28 20:38:58 +0800] [289638] [WARNING] Invalid request from ip=213.177.179.195: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-29 04:56:06 +0800] [261794] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-29 06:43:58 +0800] [215603] [CRITICAL] WORKER TIMEOUT (pid:261809)
+[2026-10-29 06:43:58 +0800] [261809] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 140, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 111, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 459, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 199, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 482, in parse
+    return self._parse_python(unreader, buf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 574, in _parse_python
+    line, buf = self.read_line(unreader, buf, self.limit_request_line)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 625, in read_line
+    self.read_into(unreader, buf)
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 605, in read_into
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/deepseek/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 198, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2026-10-29 06:43:58 +0800] [261809] [INFO] Worker exiting (pid: 261809)
+[2026-10-29 06:43:58 +0800] [324650] [INFO] Booting worker with pid: 324650
+[2026-10-29 06:43:58 +0800] [215603] [INFO] Control socket listening at /root/.gunicorn/gunicorn.ctl
+[2026-10-29 16:08:26 +0800] [289638] [WARNING] Invalid request from ip=87.251.64.23: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2026-10-30 03:40:10 +0800] [324650] [WARNING] Invalid request from ip=45.79.207.110: Invalid HTTP request line: 'stats'
+[2026-10-30 14:48:14 +0800] [324650] [INFO] Worker exiting (pid: 324650)
+[2026-10-30 14:48:14 +0800] [215603] [INFO] Handling signal: term
+[2026-10-30 14:48:14 +0800] [289638] [INFO] Worker exiting (pid: 289638)
+[2026-10-30 14:48:14 +0800] [261794] [INFO] Worker exiting (pid: 261794)
+[2026-10-30 14:48:14 +0800] [215603] [INFO] Worker (pid:324650) was sent SIGTERM!
+[2026-10-30 14:48:17 +0800] [215603] [INFO] Shutting down: Master
